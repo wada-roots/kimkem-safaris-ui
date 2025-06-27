@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,15 +53,24 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
+				// Safari-specific colors
+				safari: {
+					'green-900': '#1B3B0A',
+					'green-800': '#2D5016',
+					'green-700': '#3F6622',
+					'green-600': '#4A7C59',
+					'green-500': '#5B8A6B',
+					'green-400': '#6B8E6B',
+					'green-300': '#8FA68F',
+					'green-200': '#B3C4B3',
+					'green-100': '#D7E2D7',
+					'gold-700': '#B8860B',
+					'gold-600': '#DAA520',
+					'gold-500': '#FFD700',
+					'gold-400': '#FFE55C',
+					'gold-300': '#F4A460',
+					'gold-200': '#F5DEB3',
+					'gold-100': '#FFFACD',
 				}
 			},
 			borderRadius: {
@@ -84,11 +94,49 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(20px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'slide-in-left': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateX(-50px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateX(0)'
+					}
+				},
+				'scale-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'scale(0.95)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'scale(1)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.6s ease-out',
+				'slide-in-left': 'slide-in-left 0.6s ease-out',
+				'scale-in': 'scale-in 0.4s ease-out'
+			},
+			backgroundImage: {
+				'safari-gradient': 'linear-gradient(135deg, #2D5016 0%, #4A7C59 50%, #DAA520 100%)',
+				'gold-gradient': 'linear-gradient(135deg, #DAA520 0%, #FFD700 100%)',
+				'green-gradient': 'linear-gradient(135deg, #1B3B0A 0%, #4A7C59 100%)'
 			}
 		}
 	},
