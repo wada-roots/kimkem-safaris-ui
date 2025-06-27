@@ -10,9 +10,10 @@ const Header = () => {
   const navItems = [
     { name: 'Home', href: '/' },
     { name: 'Safaris', href: '/safaris' },
-    { name: 'About', href: '#about' },
-    { name: 'Testimonials', href: '#testimonials' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Vehicles', href: '/vehicles' },
+    { name: 'About', href: '/about' },
+    { name: 'Testimonials', href: '/testimonials' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   const isExternalLink = (href: string) => href.startsWith('#');
@@ -61,9 +62,9 @@ const Header = () => {
                 </Link>
               )
             ))}
-            <button className="safari-btn-primary">
+            <Link to="/book" className="safari-btn-primary">
               Book Now
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -104,9 +105,9 @@ const Header = () => {
                   </Link>
                 )
               ))}
-              <button className="safari-btn-primary mt-4 w-full">
+              <Link to="/book" className="safari-btn-primary mt-4 w-full text-center" onClick={() => setIsMenuOpen(false)}>
                 Book Now
-              </button>
+              </Link>
             </div>
           </div>
         )}
