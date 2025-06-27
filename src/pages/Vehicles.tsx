@@ -2,6 +2,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Car, Users, Shield, Star } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Vehicles = () => {
   const vehicles = [
@@ -141,12 +142,12 @@ const Vehicles = () => {
 
                   {/* Action Buttons */}
                   <div className="flex gap-4">
-                    <button className="safari-btn-primary">
+                    <Link to="/book" className="safari-btn-primary">
                       Book This Vehicle
-                    </button>
-                    <button className="safari-btn-secondary">
+                    </Link>
+                    <Link to="/contact" className="safari-btn-secondary">
                       Get Quote
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -160,12 +161,12 @@ const Vehicles = () => {
               Contact us to discuss which vehicle best suits your safari needs and group size.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="safari-btn-primary text-lg px-10 py-4">
+              <Link to="/contact" className="safari-btn-primary text-lg px-10 py-4">
                 Contact Us Today
-              </button>
-              <button className="safari-btn-secondary text-lg px-10 py-4">
+              </Link>
+              <Link to="/safaris" className="safari-btn-secondary text-lg px-10 py-4">
                 View Safari Packages
-              </button>
+              </Link>
             </div>
           </div>
         </div>
