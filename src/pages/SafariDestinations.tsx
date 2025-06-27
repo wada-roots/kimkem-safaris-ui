@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -132,6 +133,106 @@ const SafariDestinations = () => {
         "Park entry fees",
         "Accommodation in eco-lodges or camps",
         "All-inclusive meal plan"
+      ]
+    },
+    {
+      id: 6,
+      name: "Aberdare National Park",
+      shortDesc: "Explore the misty highlands and unique wildlife of this mountainous park.",
+      description: "Discover the enchanting Aberdare National Park, characterized by its misty highlands, bamboo forests, and spectacular waterfalls. This unique park offers a different safari experience with its cool climate and diverse ecosystems. The park is home to elephants, buffalo, rhinos, and the rare bongo antelope.",
+      image: "https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      duration: "2-4 Days",
+      price: "From $340/day",
+      difficulty: "Moderate",
+      bestTime: "June to September (Dry season)",
+      highlights: [
+        "Misty highland landscapes",
+        "Spectacular waterfalls",
+        "Rare bongo antelope",
+        "Bamboo forests",
+        "Unique mountain ecosystem"
+      ],
+      included: [
+        "Mountain specialist guide",
+        "4WD vehicle suitable for mountain terrain",
+        "Park entrance fees",
+        "Mountain lodge accommodation",
+        "All meals and refreshments"
+      ]
+    },
+    {
+      id: 7,
+      name: "Nairobi National Park",
+      shortDesc: "Experience wildlife viewing just minutes from Kenya's capital city.",
+      description: "Discover the unique Nairobi National Park, the only wildlife park in the world located within a capital city. This remarkable park offers incredible wildlife viewing opportunities against the backdrop of Nairobi's skyline. Home to lions, leopards, cheetahs, and over 400 bird species.",
+      image: "https://images.unsplash.com/photo-1466721591366-2d5fba72006d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      duration: "Half Day - 2 Days",
+      price: "From $180/day",
+      difficulty: "Easy",
+      bestTime: "Year-round",
+      highlights: [
+        "Wildlife viewing near the city",
+        "Black rhino sanctuary",
+        "Over 400 bird species",
+        "Nairobi skyline backdrop",
+        "David Sheldrick Elephant Orphanage nearby"
+      ],
+      included: [
+        "Professional city-safari guide",
+        "Safari vehicle with pop-up roof",
+        "Park entry fees",
+        "Optional orphanage visit",
+        "Refreshments during safari"
+      ]
+    },
+    {
+      id: 8,
+      name: "Diani Beach",
+      shortDesc: "Relax on pristine white sand beaches with crystal clear waters and swaying palm trees.",
+      description: "Experience the tropical paradise of Diani Beach, one of Africa's most beautiful coastal destinations. With its pristine white sand beaches, crystal clear turquoise waters, and swaying coconut palms, Diani offers the perfect beach getaway. Enjoy water sports, coral reef diving, and beachfront relaxation.",
+      image: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      duration: "2-7 Days",
+      price: "From $220/day",
+      difficulty: "Easy",
+      bestTime: "October to March (Dry season)",
+      highlights: [
+        "Pristine white sand beaches",
+        "Crystal clear turquoise waters",
+        "Coral reef snorkeling",
+        "Dhow sailing experiences",
+        "Beachfront dining"
+      ],
+      included: [
+        "Beach resort accommodation",
+        "Water sports equipment",
+        "Snorkeling gear",
+        "Beach transfers",
+        "Tropical meals and drinks"
+      ]
+    },
+    {
+      id: 9,
+      name: "Watamu Marine Park",
+      shortDesc: "Explore vibrant coral reefs and enjoy water sports in this UNESCO World Heritage marine park.",
+      description: "Discover the underwater wonders of Watamu Marine Park, a UNESCO World Heritage site renowned for its pristine coral reefs and diverse marine life. This marine paradise offers world-class diving, snorkeling, and fishing experiences. The park protects some of the most beautiful coral formations on the East African coast.",
+      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      duration: "2-5 Days",
+      price: "From $280/day",
+      difficulty: "Easy to Moderate",
+      bestTime: "October to March (Calm seas)",
+      highlights: [
+        "UNESCO World Heritage marine park",
+        "Pristine coral reefs",
+        "Diverse marine life",
+        "World-class diving",
+        "Sea turtle nesting sites"
+      ],
+      included: [
+        "Marine park specialist guide",
+        "Diving and snorkeling equipment",
+        "Boat transfers",
+        "Marine park fees",
+        "Coastal accommodation and meals"
       ]
     }
   ];

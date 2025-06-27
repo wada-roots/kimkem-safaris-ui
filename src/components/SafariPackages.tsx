@@ -1,44 +1,105 @@
 
 import { MapPin, Clock, Users, Star, Waves } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import SafariModal from './SafariModal';
 
 const SafariPackages = () => {
+  const [selectedSafari, setSelectedSafari] = useState<any>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const safaris = [
     {
       id: 1,
+      name: "Maasai Mara Great Migration",
       title: "Maasai Mara Great Migration",
-      description: "Witness the world's greatest wildlife spectacle as millions of wildebeest and zebras cross the Mara River.",
-      image: "https://images.unsplash.com/photo-1466721591366-2d5fba72006d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      description: "Witness the world's greatest wildlife spectacle as millions of wildebeest and zebras cross the Mara River in this iconic Kenyan reserve. Experience the Big Five and immerse yourself in Maasai culture while staying in luxury lodges.",
+      image: "https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       duration: "5 Days",
       groupSize: "2-8 People",
       location: "Maasai Mara",
       rating: 4.9,
       price: "From $2,450",
-      highlights: ["Great Migration", "Big Five", "Hot Air Balloon", "Cultural Visit"]
+      highlights: ["Great Migration", "Big Five", "Hot Air Balloon", "Cultural Visit"],
+      difficulty: "Easy to Moderate",
+      bestTime: "July to October (Migration season)",
+      included: [
+        "Professional safari guide",
+        "Game drives in 4WD vehicle",
+        "Park entry fees",
+        "Luxury lodge accommodation",
+        "All meals during safari",
+        "Hot air balloon safari (optional)"
+      ]
     },
     {
       id: 2,
+      name: "Amboseli Elephant Paradise",
       title: "Amboseli Elephant Paradise",
-      description: "Experience the majestic elephants of Amboseli with the stunning backdrop of Mount Kilimanjaro.",
+      description: "Experience the majestic elephants of Amboseli with the stunning backdrop of Mount Kilimanjaro. This photographer's paradise offers incredible opportunities to capture iconic African landscapes and wildlife moments.",
       image: "https://images.unsplash.com/photo-1493962853295-0fd70327578a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       duration: "4 Days",
       groupSize: "2-6 People",
       location: "Amboseli",
       rating: 4.8,
       price: "From $1,890",
-      highlights: ["Elephant Herds", "Mt. Kilimanjaro Views", "Bird Watching", "Maasai Culture"]
+      highlights: ["Elephant Herds", "Mt. Kilimanjaro Views", "Bird Watching", "Maasai Culture"],
+      difficulty: "Easy",
+      bestTime: "June to October (Dry season)",
+      included: [
+        "Experienced local guide",
+        "Transport in safari vehicle",
+        "Park entrance fees",
+        "Accommodation in lodges or camps",
+        "All meals included",
+        "Cultural village visit"
+      ]
     },
     {
       id: 3,
+      name: "Samburu Wild Frontier",
       title: "Samburu Wild Frontier",
-      description: "Discover the unique wildlife of Northern Kenya including Grevy's zebras, reticulated giraffes, and Somali ostriches.",
+      description: "Discover the unique wildlife of Northern Kenya including Grevy's zebras, reticulated giraffes, and Somali ostriches. This remote reserve offers authentic cultural experiences with the Samburu people.",
       image: "https://images.unsplash.com/photo-1465379944081-7f47de8d74ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       duration: "6 Days",
       groupSize: "2-8 People",
       location: "Samburu",
       rating: 4.7,
       price: "From $2,180",
-      highlights: ["Rare Species", "Cultural Immersion", "River Safari", "Night Game Drives"]
+      highlights: ["Rare Species", "Cultural Immersion", "River Safari", "Night Game Drives"],
+      difficulty: "Moderate",
+      bestTime: "June to October (Dry season)",
+      included: [
+        "Professional safari guide from the local community",
+        "Customized safari vehicle",
+        "Park entry fees",
+        "Accommodation in eco-lodges or camps",
+        "All-inclusive meal plan",
+        "Cultural experiences"
+      ]
+    },
+    {
+      id: 4,
+      name: "Nairobi National Park",
+      title: "Nairobi National Park",
+      description: "Experience wildlife viewing just minutes from Kenya's capital city. This unique park offers incredible wildlife viewing opportunities against the backdrop of Nairobi's skyline, including lions, leopards, and over 400 bird species.",
+      image: "https://images.unsplash.com/photo-1466721591366-2d5fba72006d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      duration: "2 Days",
+      groupSize: "2-10 People",
+      location: "Nairobi",
+      rating: 4.6,
+      price: "From $890",
+      highlights: ["City Wildlife", "Black Rhino Sanctuary", "Bird Watching", "Elephant Orphanage"],
+      difficulty: "Easy",
+      bestTime: "Year-round",
+      included: [
+        "Professional city-safari guide",
+        "Safari vehicle with pop-up roof",
+        "Park entry fees",
+        "Optional orphanage visit",
+        "Refreshments during safari",
+        "City hotel accommodation"
+      ]
     }
   ];
 
@@ -58,7 +119,7 @@ const SafariPackages = () => {
       id: 2,
       title: "Watamu Marine Park",
       description: "Explore vibrant coral reefs and enjoy water sports in this UNESCO World Heritage marine park.",
-      image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       duration: "4 Days",
       location: "Watamu",
       rating: 4.7,
@@ -66,6 +127,16 @@ const SafariPackages = () => {
       highlights: ["Coral Reefs", "Diving", "Marine Life", "Cultural Tours"]
     }
   ];
+
+  const handleViewDetails = (safari: any) => {
+    setSelectedSafari(safari);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedSafari(null);
+  };
 
   return (
     <section id="safaris" className="py-20 bg-gradient-to-b from-white to-safari-green-50">
@@ -82,7 +153,7 @@ const SafariPackages = () => {
         </div>
 
         {/* Safari Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {safaris.map((safari, index) => (
             <div 
               key={safari.id} 
@@ -142,7 +213,10 @@ const SafariPackages = () => {
 
                 {/* Action Buttons */}
                 <div className="flex gap-3">
-                  <button className="flex-1 safari-btn-primary text-sm py-2">
+                  <button 
+                    onClick={() => handleViewDetails(safari)}
+                    className="flex-1 safari-btn-primary text-sm py-2"
+                  >
                     View Details
                   </button>
                   <Link to="/book" className="flex-1 safari-btn-secondary text-sm py-2 text-center">
@@ -171,7 +245,7 @@ const SafariPackages = () => {
               <div 
                 key={beach.id} 
                 className="safari-card rounded-xl overflow-hidden animate-scale-in"
-                style={{ animationDelay: `${(index + 3) * 0.2}s` }}
+                style={{ animationDelay: `${(index + 4) * 0.2}s` }}
               >
                 {/* Image */}
                 <div className="relative h-64 overflow-hidden">
@@ -242,6 +316,15 @@ const SafariPackages = () => {
           </Link>
         </div>
       </div>
+
+      {/* Modal */}
+      {selectedSafari && (
+        <SafariModal 
+          isOpen={isModalOpen}
+          onClose={closeModal}
+          safari={selectedSafari}
+        />
+      )}
     </section>
   );
 };
