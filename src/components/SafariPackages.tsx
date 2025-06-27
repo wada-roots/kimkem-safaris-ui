@@ -130,9 +130,9 @@ const SafariPackages = () => {
 
         {/* View All Button */}
         <div className="text-center mt-12">
-          <button className="safari-btn-primary text-lg px-12 py-4">
-            View All Safari Packages
-          </button>
+          <a href="/safaris" className="safari-btn-primary text-lg px-12 py-4 inline-block">
+            View All Safari Destinations
+          </a>
         </div>
       </div>
     </section>
