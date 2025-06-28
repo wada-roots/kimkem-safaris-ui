@@ -3,18 +3,26 @@ import { ChevronDown } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen safari-hero-bg flex items-center justify-center relative overflow-hidden">
+    <section id="home" className="min-h-screen relative overflow-hidden">
+      {/* Full-screen background image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')"
+        }}
+      ></div>
+
       {/* Content */}
-      <div className="container mx-auto px-4 text-center text-white z-10">
+      <div className="container mx-auto px-4 text-center text-white z-10 relative flex items-center justify-center min-h-screen">
         <div className="max-w-4xl mx-auto animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Discover the
-            <span className="block text-safari-gold-400">Wild Beauty</span>
-            <span className="block">of Africa</span>
+            <span className="block text-safari-gold-400">Lifetime</span>
+            <span className="block">Safari Adventures</span>
+            <span className="block text-white/90">Await You</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto leading-relaxed">
-            Embark on extraordinary safari adventures through Kenya's most spectacular landscapes. 
-            Experience wildlife encounters that will leave you breathless.
+            Experience the magic of Africa's wilderness in luxury tented camps. 
+            Create memories that will last a lifetime in Kenya's most spectacular landscapes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
             <button className="safari-btn-secondary text-lg px-10 py-4">
@@ -38,7 +46,7 @@ const Hero = () => {
       </div>
 
       {/* Overlay for better text readability */}
-      <div className="absolute inset-0 bg-black/20"></div>
+      <div className="absolute inset-0 bg-black/30"></div>
     </section>
   );
 };
