@@ -27,7 +27,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/660d9356-65c3-4d7a-92a7-ecc485dfb8a6.png" 
               alt="Kimken Safaris" 
-              className="h-12 w-auto"
+              className="h-16 w-auto"
             />
           </Link>
 
