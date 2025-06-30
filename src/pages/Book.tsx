@@ -1,9 +1,21 @@
 
+import { useEffect, useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Calendar, Users, MapPin, Star, Phone, Mail } from 'lucide-react';
 
 const Book = () => {
+  const [searchParams] = useSearchParams();
+  const [selectedDestination, setSelectedDestination] = useState('');
+
+  useEffect(() => {
+    const destination = searchParams.get('destination');
+    if (destination) {
+      setSelectedDestination(destination);
+    }
+  }, [searchParams]);
+
   const popularSafaris = [
     {
       name: "Maasai Mara Great Migration",
@@ -108,18 +120,23 @@ const Book = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
                         <label className="block text-safari-green-700 font-medium mb-2">Preferred Safari *</label>
-                        <select required className="w-full px-4 py-3 border border-safari-green-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-safari-gold-500">
+                        <select 
+                          required 
+                          value={selectedDestination}
+                          onChange={(e) => setSelectedDestination(e.target.value)}
+                          className="w-full px-4 py-3 border border-safari-green-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-safari-gold-500"
+                        >
                           <option value="">Select your preferred safari</option>
-                          <option>Maasai Mara Great Migration</option>
-                          <option>Amboseli Elephant Paradise</option>
-                          <option>Samburu Wild Frontier</option>
-                          <option>Tsavo National Park</option>
-                          <option>Lake Nakuru National Park</option>
-                          <option>Lake Naivasha</option>
-                          <option>Nairobi National Park</option>
-                          <option>Mount Longonot Hiking</option>
-                          <option>Ngong Hills</option>
-                          <option>Custom Safari Package</option>
+                          <option value="Maasai Mara National Reserve">Maasai Mara National Reserve</option>
+                          <option value="Amboseli National Park">Amboseli National Park</option>
+                          <option value="Lake Nakuru National Park">Lake Nakuru National Park</option>
+                          <option value="Tsavo National Park">Tsavo National Park</option>
+                          <option value="Samburu National Reserve">Samburu National Reserve</option>
+                          <option value="Aberdare National Park">Aberdare National Park</option>
+                          <option value="Nairobi National Park">Nairobi National Park</option>
+                          <option value="Diani Beach">Diani Beach</option>
+                          <option value="Watamu Marine Park">Watamu Marine Park</option>
+                          <option value="Custom Safari Package">Custom Safari Package</option>
                         </select>
                       </div>
                       <div>
