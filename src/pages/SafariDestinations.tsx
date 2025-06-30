@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SafariModal from '@/components/SafariModal';
@@ -302,9 +303,9 @@ const SafariDestinations = () => {
                     >
                       Learn More
                     </button>
-                    <button className="safari-btn-primary flex-1">
+                    <Link to="/book" className="safari-btn-primary flex-1 text-center">
                       Book Now
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>

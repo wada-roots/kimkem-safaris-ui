@@ -1,5 +1,6 @@
 
 import { ChevronDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -25,9 +26,9 @@ const Hero = () => {
             Create memories that will last a lifetime in Kenya's most spectacular landscapes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
-            <button className="safari-btn-secondary text-lg px-10 py-4">
+            <Link to="/safaris" className="safari-btn-secondary text-lg px-10 py-4">
               Explore Safaris
-            </button>
+            </Link>
             <button className="border-2 border-white text-white hover:bg-white hover:text-safari-green-800 font-semibold py-4 px-10 rounded-lg transition-all duration-300 text-lg">
               Watch Our Story
             </button>
