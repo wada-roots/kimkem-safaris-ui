@@ -20,26 +20,26 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-lg">
-      <nav className="container mx-auto px-4 py-4">
+      <nav className="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex items-center justify-between">
-          {/* Logo - moved to left */}
-          <Link to="/" className="flex items-center space-x-3">
+          {/* Logo */}
+          <Link to="/" className="flex items-center space-x-3 flex-shrink-0">
             <img 
               src="/lovable-uploads/660d9356-65c3-4d7a-92a7-ecc485dfb8a6.png" 
               alt="Kimken Safaris" 
-              className="h-16 w-auto"
+              className="h-12 sm:h-14 lg:h-16 w-auto"
             />
           </Link>
 
-          {/* Desktop Navigation - centered/left aligned */}
-          <div className="hidden md:flex items-center justify-center flex-1 mx-8">
-            <div className="flex items-center space-x-8">
+          {/* Desktop Navigation */}
+          <div className="hidden lg:flex items-center justify-center flex-1 mx-8">
+            <div className="flex items-center space-x-6 xl:space-x-8">
               {navItems.map((item) => (
                 isExternalLink(item.href) ? (
                   <a
                     key={item.name}
                     href={item.href}
-                    className="text-safari-green-700 hover:text-safari-gold-600 font-medium transition-colors duration-300 relative group"
+                    className="text-safari-green-700 hover:text-safari-gold-600 font-medium transition-colors duration-300 relative group text-sm xl:text-base"
                   >
                     {item.name}
                     <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-safari-gold-600 transition-all duration-300 group-hover:w-full"></span>
@@ -48,7 +48,7 @@ const Header = () => {
                   <Link
                     key={item.name}
                     to={item.href}
-                    className={`font-medium transition-colors duration-300 relative group ${
+                    className={`font-medium transition-colors duration-300 relative group text-sm xl:text-base ${
                       location.pathname === item.href 
                         ? 'text-safari-gold-600' 
                         : 'text-safari-green-700 hover:text-safari-gold-600'
@@ -64,14 +64,14 @@ const Header = () => {
             </div>
           </div>
 
-          {/* Book Now Button - stays on the right */}
-          <Link to="/book" className="hidden md:block safari-btn-primary">
+          {/* Book Now Button - Desktop */}
+          <Link to="/book" className="hidden lg:block safari-btn-primary text-sm xl:text-base px-4 xl:px-8 py-2 xl:py-3">
             Book Now
           </Link>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-safari-green-700"
+            className="lg:hidden p-2 text-safari-green-700 rounded-lg hover:bg-safari-green-50 transition-colors"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -80,14 +80,14 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-safari-green-200">
-            <div className="flex flex-col space-y-4 mt-4">
+          <div className="lg:hidden mt-4 pb-4 border-t border-safari-green-200 bg-white/95 backdrop-blur-md rounded-b-lg">
+            <div className="flex flex-col space-y-4 mt-4 px-2">
               {navItems.map((item) => (
                 isExternalLink(item.href) ? (
                   <a
                     key={item.name}
                     href={item.href}
-                    className="text-safari-green-700 hover:text-safari-gold-600 font-medium transition-colors duration-300"
+                    className="text-safari-green-700 hover:text-safari-gold-600 font-medium transition-colors duration-300 px-3 py-2 rounded-lg hover:bg-safari-green-50"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {item.name}
@@ -96,9 +96,9 @@ const Header = () => {
                   <Link
                     key={item.name}
                     to={item.href}
-                    className={`font-medium transition-colors duration-300 ${
+                    className={`font-medium transition-colors duration-300 px-3 py-2 rounded-lg hover:bg-safari-green-50 ${
                       location.pathname === item.href 
-                        ? 'text-safari-gold-600' 
+                        ? 'text-safari-gold-600 bg-safari-gold-50' 
                         : 'text-safari-green-700 hover:text-safari-gold-600'
                     }`}
                     onClick={() => setIsMenuOpen(false)}
@@ -107,7 +107,11 @@ const Header = () => {
                   </Link>
                 )
               ))}
-              <Link to="/book" className="safari-btn-primary mt-4 w-full text-center" onClick={() => setIsMenuOpen(false)}>
+              <Link 
+                to="/book" 
+                className="safari-btn-primary mt-4 w-full text-center py-3" 
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Book Now
               </Link>
             </div>
