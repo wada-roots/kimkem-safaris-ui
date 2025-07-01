@@ -32,7 +32,7 @@ const Vehicles = () => {
       description:
         "Comfortable and spacious minibuses perfect for group safaris. Equipped with large windows and elevated seating for better wildlife viewing.",
       image:
-        "https://images.pexels.com/photos/4404524/pexels-photo-4404524.jpeg",
+        "https://images.pexels.com/photos/12770672/pexels-photo-12770672.jpeg",
       capacity: "10-14 Passengers",
       features: [
         "Large panoramic windows",
@@ -53,7 +53,7 @@ const Vehicles = () => {
       description:
         "Experience the wild with an open roof safari van, offering 360-degree views and unobstructed photography opportunities.",
       image:
-        "https://images.pexels.com/photos/10740862/pexels-photo-10740862.jpeg",
+        "https://images.pexels.com/photos/5521696/pexels-photo-5521696.jpeg",
       capacity: "8-10 Passengers",
       features: [
         "360-degree open roof viewing",
@@ -74,7 +74,7 @@ const Vehicles = () => {
       description:
         "Luxury safari vehicle offering comfort and reliability. Perfect for smaller groups seeking a premium safari experience.",
       image:
-        "https://images.pexels.com/photos/5521696/pexels-photo-5521696.jpeg",
+        "https://images.pexels.com/photos/14510933/pexels-photo-14510933.jpeg",
       capacity: "4-6 Passengers",
       features: [
         "Luxury interior finish",
@@ -95,7 +95,7 @@ const Vehicles = () => {
       description:
         "Large capacity buses ideal for group tours and multi-day safari expeditions. Comfortable seating and ample storage space.",
       image:
-        "https://images.pexels.com/photos/16444281/pexels-photo-16444281.jpeg",
+        "https://images.pexels.com/photos/10740862/pexels-photo-10740862.jpeg",
       capacity: "25-30 Passengers",
       features: [
         "Spacious interior",
