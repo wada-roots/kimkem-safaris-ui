@@ -53,7 +53,7 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Safari-specific colors
+				// Safari-specific colors - removed gold colors
 				safari: {
 					'green-900': '#1B3B0A',
 					'green-800': '#2D5016',
@@ -64,13 +64,7 @@ export default {
 					'green-300': '#8FA68F',
 					'green-200': '#B3C4B3',
 					'green-100': '#D7E2D7',
-					'gold-700': '#B8860B',
-					'gold-600': '#DAA520',
-					'gold-500': '#FFD700',
-					'gold-400': '#FFE55C',
-					'gold-300': '#F4A460',
-					'gold-200': '#F5DEB3',
-					'gold-100': '#FFFACD',
+					'green-50': '#F0F5F0',
 				}
 			},
 			borderRadius: {
@@ -134,8 +128,7 @@ export default {
 				'scale-in': 'scale-in 0.4s ease-out'
 			},
 			backgroundImage: {
-				'safari-gradient': 'linear-gradient(135deg, #2D5016 0%, #4A7C59 50%, #DAA520 100%)',
-				'gold-gradient': 'linear-gradient(135deg, #DAA520 0%, #FFD700 100%)',
+				'safari-gradient': 'linear-gradient(135deg, #2D5016 0%, #4A7C59 50%, #5B8A6B 100%)',
 				'green-gradient': 'linear-gradient(135deg, #1B3B0A 0%, #4A7C59 100%)'
 			}
 		}

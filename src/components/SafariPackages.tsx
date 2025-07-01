@@ -167,11 +167,11 @@ const SafariPackages = () => {
                   alt={safari.title}
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                 />
-                <div className="absolute top-4 right-4 bg-safari-gold-500 text-safari-green-900 px-3 py-1 rounded-full font-semibold text-sm">
+                <div className="absolute top-4 right-4 bg-safari-green-600 text-white px-3 py-1 rounded-full font-semibold text-sm">
                   {safari.price}
                 </div>
                 <div className="absolute bottom-4 left-4 flex items-center space-x-1 bg-black/60 text-white px-3 py-1 rounded-full">
-                  <Star size={16} className="fill-safari-gold-400 text-safari-gold-400" />
+                  <Star size={16} className="fill-safari-green-400 text-safari-green-400" />
                   <span className="text-sm font-medium">{safari.rating}</span>
                 </div>
               </div>
@@ -232,7 +232,7 @@ const SafariPackages = () => {
         <div className="mb-16">
           <div className="text-center mb-12">
             <h3 className="text-3xl md:text-4xl font-bold mb-4 safari-text-gradient flex items-center justify-center">
-              <Waves className="mr-3 text-safari-gold-600" />
+              <Waves className="mr-3 text-safari-green-600" />
               Sandy Beaches & Coastal Adventures
             </h3>
             <p className="text-lg text-safari-green-600 max-w-2xl mx-auto">
@@ -254,11 +254,11 @@ const SafariPackages = () => {
                     alt={beach.title}
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                   />
-                  <div className="absolute top-4 right-4 bg-safari-gold-500 text-safari-green-900 px-3 py-1 rounded-full font-semibold text-sm">
+                  <div className="absolute top-4 right-4 bg-safari-green-600 text-white px-3 py-1 rounded-full font-semibold text-sm">
                     {beach.price}
                   </div>
                   <div className="absolute bottom-4 left-4 flex items-center space-x-1 bg-black/60 text-white px-3 py-1 rounded-full">
-                    <Star size={16} className="fill-safari-gold-400 text-safari-gold-400" />
+                    <Star size={16} className="fill-safari-green-400 text-safari-green-400" />
                     <span className="text-sm font-medium">{beach.rating}</span>
                   </div>
                 </div>

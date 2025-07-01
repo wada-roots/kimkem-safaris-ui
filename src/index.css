@@ -25,8 +25,8 @@
     --muted: 215 226 215;
     --muted-foreground: 107 142 107;
 
-    --accent: 218 165 32;
-    --accent-foreground: 27 59 10;
+    --accent: 91 138 107;
+    --accent-foreground: 255 255 255;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -57,7 +57,7 @@
       135deg,
       rgba(27, 59, 10, 0.9) 0%,
       rgba(45, 80, 22, 0.8) 50%,
-      rgba(218, 165, 32, 0.7) 100%
+      rgba(91, 138, 107, 0.7) 100%
     ),
     url('https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');
     background-size: cover;
@@ -74,11 +74,11 @@
   }
 
   .safari-btn-secondary {
-    @apply bg-safari-gold-600 hover:bg-safari-gold-700 text-safari-green-900 font-semibold py-3 px-8 rounded-lg transition-all duration-300 hover:shadow-lg transform hover:-translate-y-0.5;
+    @apply bg-safari-green-600 hover:bg-safari-green-700 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 hover:shadow-lg transform hover:-translate-y-0.5;
   }
 
   .safari-text-gradient {
-    @apply bg-gradient-to-r from-safari-green-700 to-safari-gold-600 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-safari-green-700 to-safari-green-500 bg-clip-text text-transparent;
   }
 }
 

@@ -39,10 +39,10 @@ const Header = () => {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="text-safari-green-700 hover:text-safari-gold-600 font-medium transition-colors duration-300 relative group text-sm xl:text-base"
+                    className="text-safari-green-700 hover:text-safari-green-600 font-medium transition-colors duration-300 relative group text-sm xl:text-base"
                   >
                     {item.name}
-                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-safari-gold-600 transition-all duration-300 group-hover:w-full"></span>
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-safari-green-600 transition-all duration-300 group-hover:w-full"></span>
                   </a>
                 ) : (
                   <Link
@@ -50,12 +50,12 @@ const Header = () => {
                     to={item.href}
                     className={`font-medium transition-colors duration-300 relative group text-sm xl:text-base ${
                       location.pathname === item.href 
-                        ? 'text-safari-gold-600' 
-                        : 'text-safari-green-700 hover:text-safari-gold-600'
+                        ? 'text-safari-green-600' 
+                        : 'text-safari-green-700 hover:text-safari-green-600'
                     }`}
                   >
                     {item.name}
-                    <span className={`absolute -bottom-1 left-0 h-0.5 bg-safari-gold-600 transition-all duration-300 ${
+                    <span className={`absolute -bottom-1 left-0 h-0.5 bg-safari-green-600 transition-all duration-300 ${
                       location.pathname === item.href ? 'w-full' : 'w-0 group-hover:w-full'
                     }`}></span>
                   </Link>
@@ -87,7 +87,7 @@ const Header = () => {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="text-safari-green-700 hover:text-safari-gold-600 font-medium transition-colors duration-300 px-3 py-2 rounded-lg hover:bg-safari-green-50"
+                    className="text-safari-green-700 hover:text-safari-green-600 font-medium transition-colors duration-300 px-3 py-2 rounded-lg hover:bg-safari-green-50"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {item.name}
@@ -98,8 +98,8 @@ const Header = () => {
                     to={item.href}
                     className={`font-medium transition-colors duration-300 px-3 py-2 rounded-lg hover:bg-safari-green-50 ${
                       location.pathname === item.href 
-                        ? 'text-safari-gold-600 bg-safari-gold-50' 
-                        : 'text-safari-green-700 hover:text-safari-gold-600'
+                        ? 'text-safari-green-600 bg-safari-green-50' 
+                        : 'text-safari-green-700 hover:text-safari-green-600'
                     }`}
                     onClick={() => setIsMenuOpen(false)}
                   >

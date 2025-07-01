@@ -42,7 +42,7 @@ const SafariModal = ({ isOpen, onClose, safari }: SafariModalProps) => {
             <div className="flex items-center text-white/90">
               <Clock size={18} className="mr-2" />
               <span className="mr-4">{safari.duration}</span>
-              <span className="text-safari-gold-300 font-semibold text-xl">{safari.price}</span>
+              <span className="text-safari-green-300 font-semibold text-xl">{safari.price}</span>
             </div>
           </div>
         </div>
@@ -62,7 +62,7 @@ const SafariModal = ({ isOpen, onClose, safari }: SafariModalProps) => {
                 <ul className="space-y-2">
                   {safari.highlights.map((highlight, index) => (
                     <li key={index} className="flex items-start">
-                      <Star size={16} className="text-safari-gold-600 mr-2 mt-1 flex-shrink-0" />
+                      <Star size={16} className="text-safari-green-600 mr-2 mt-1 flex-shrink-0" />
                       <span className="text-safari-green-700">{highlight}</span>
                     </li>
                   ))}
@@ -76,21 +76,21 @@ const SafariModal = ({ isOpen, onClose, safari }: SafariModalProps) => {
                 <h4 className="text-xl font-semibold text-safari-green-800 mb-4">Safari Details</h4>
                 <div className="space-y-3">
                   <div className="flex items-center">
-                    <Clock size={18} className="text-safari-gold-600 mr-3" />
+                    <Clock size={18} className="text-safari-green-600 mr-3" />
                     <div>
                       <span className="font-medium text-safari-green-800">Duration: </span>
                       <span className="text-safari-green-700">{safari.duration}</span>
                     </div>
                   </div>
                   <div className="flex items-center">
-                    <Users size={18} className="text-safari-gold-600 mr-3" />
+                    <Users size={18} className="text-safari-green-600 mr-3" />
                     <div>
                       <span className="font-medium text-safari-green-800">Difficulty: </span>
                       <span className="text-safari-green-700">{safari.difficulty}</span>
                     </div>
                   </div>
                   <div className="flex items-center">
-                    <MapPin size={18} className="text-safari-gold-600 mr-3" />
+                    <MapPin size={18} className="text-safari-green-600 mr-3" />
                     <div>
                       <span className="font-medium text-safari-green-800">Best Time: </span>
                       <span className="text-safari-green-700">{safari.bestTime}</span>
@@ -104,7 +104,7 @@ const SafariModal = ({ isOpen, onClose, safari }: SafariModalProps) => {
                 <ul className="space-y-2">
                   {safari.included.map((item, index) => (
                     <li key={index} className="flex items-start">
-                      <div className="w-2 h-2 bg-safari-gold-600 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-safari-green-600 rounded-full mr-3 mt-2 flex-shrink-0"></div>
                       <span className="text-safari-green-700">{item}</span>
                     </li>
                   ))}
