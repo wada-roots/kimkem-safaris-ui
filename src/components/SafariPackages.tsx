@@ -1,4 +1,3 @@
-
 import { MapPin, Clock, Users, Star, Waves } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
@@ -14,7 +13,7 @@ const SafariPackages = () => {
       name: "Maasai Mara Great Migration",
       title: "Maasai Mara Great Migration",
       description: "Witness the world's greatest wildlife spectacle as millions of wildebeest and zebras cross the Mara River in this iconic Kenyan reserve. Experience the Big Five and immerse yourself in Maasai culture while staying in luxury lodges.",
-      image: "https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1551135049-8a33b5883817?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       duration: "5 Days",
       groupSize: "2-8 People",
       location: "Maasai Mara",
@@ -37,7 +36,7 @@ const SafariPackages = () => {
       name: "Amboseli Elephant Paradise",
       title: "Amboseli Elephant Paradise",
       description: "Experience the majestic elephants of Amboseli with the stunning backdrop of Mount Kilimanjaro. This photographer's paradise offers incredible opportunities to capture iconic African landscapes and wildlife moments.",
-      image: "https://images.unsplash.com/photo-1493962853295-0fd70327578a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1564760055775-d63b17a55c44?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       duration: "4 Days",
       groupSize: "2-6 People",
       location: "Amboseli",
@@ -60,7 +59,7 @@ const SafariPackages = () => {
       name: "Samburu Wild Frontier",
       title: "Samburu Wild Frontier",
       description: "Discover the unique wildlife of Northern Kenya including Grevy's zebras, reticulated giraffes, and Somali ostriches. This remote reserve offers authentic cultural experiences with the Samburu people.",
-      image: "https://images.unsplash.com/photo-1465379944081-7f47de8d74ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       duration: "6 Days",
       groupSize: "2-8 People",
       location: "Samburu",
@@ -83,7 +82,7 @@ const SafariPackages = () => {
       name: "Nairobi National Park",
       title: "Nairobi National Park",
       description: "Experience wildlife viewing just minutes from Kenya's capital city. This unique park offers incredible wildlife viewing opportunities against the backdrop of Nairobi's skyline, including lions, leopards, and over 400 bird species.",
-      image: "https://images.unsplash.com/photo-1466721591366-2d5fba72006d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1618433956447-cfa99ba4d7b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       duration: "2 Days",
       groupSize: "2-10 People",
       location: "Nairobi",
@@ -108,7 +107,7 @@ const SafariPackages = () => {
       id: 1,
       title: "Diani Beach Getaway",
       description: "Relax on pristine white sand beaches with crystal clear waters and swaying palm trees.",
-      image: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       duration: "3 Days",
       location: "Diani, Mombasa",
       rating: 4.8,
@@ -119,7 +118,7 @@ const SafariPackages = () => {
       id: 2,
       title: "Watamu Marine Park",
       description: "Explore vibrant coral reefs and enjoy water sports in this UNESCO World Heritage marine park.",
-      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       duration: "4 Days",
       location: "Watamu",
       rating: 4.7,
@@ -171,7 +170,7 @@ const SafariPackages = () => {
                   {safari.price}
                 </div>
                 <div className="absolute bottom-4 left-4 flex items-center space-x-1 bg-black/60 text-white px-3 py-1 rounded-full">
-                  <Star size={16} className="fill-safari-green-400 text-safari-green-400" />
+                  <Star size={16} className="fill-safari-gold-400 text-safari-gold-400" />
                   <span className="text-sm font-medium">{safari.rating}</span>
                 </div>
               </div>
@@ -258,7 +257,7 @@ const SafariPackages = () => {
                     {beach.price}
                   </div>
                   <div className="absolute bottom-4 left-4 flex items-center space-x-1 bg-black/60 text-white px-3 py-1 rounded-full">
-                    <Star size={16} className="fill-safari-green-400 text-safari-green-400" />
+                    <Star size={16} className="fill-safari-gold-400 text-safari-gold-400" />
                     <span className="text-sm font-medium">{beach.rating}</span>
                   </div>
                 </div>
