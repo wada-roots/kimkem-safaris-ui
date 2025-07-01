@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
@@ -66,7 +65,7 @@ const SafariDestinations = () => {
       name: "Lake Nakuru National Park",
       shortDesc: "Witness the pink flamingo spectacle and diverse birdlife at this alkaline lake.",
       description: "Experience the vibrant colors of Lake Nakuru, famous for its large flocks of pink flamingos. This alkaline lake is a haven for birdwatchers, with over 400 species of birds. The park also hosts rhinos, lions, and other wildlife, making it a diverse and rewarding safari destination.",
-      image: "https://images.unsplash.com/photo-1603377245293-a39595b13c3c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       duration: "1-3 Days",
       price: "From $280/day",
       difficulty: "Easy",
@@ -91,7 +90,7 @@ const SafariDestinations = () => {
       name: "Tsavo National Park",
       shortDesc: "Explore Kenya's largest national park, divided into Tsavo East and West, offering diverse landscapes and wildlife.",
       description: "Discover the vast wilderness of Tsavo, Kenya's largest national park, divided into Tsavo East and Tsavo West. Tsavo East is known for its open plains and large elephant herds, while Tsavo West features rugged landscapes, volcanic hills, and the Mzima Springs, a natural oasis.",
-      image: "https://images.unsplash.com/photo-1622541694409-a9a7a98338a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1469041797191-50ace28483c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       duration: "3-6 Days",
       price: "From $350/day",
       difficulty: "Moderate",
@@ -303,7 +302,7 @@ const SafariDestinations = () => {
                     >
                       Learn More
                     </button>
-                    <Link to="/book" className="safari-btn-primary flex-1 text-center">
+                    <Link to={`/book?destination=${encodeURIComponent(safari.name)}`} className="safari-btn-primary flex-1 text-center">
                       Book Now
                     </Link>
                   </div>
