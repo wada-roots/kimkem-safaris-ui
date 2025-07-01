@@ -4,7 +4,10 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { LoadingProvider, useLoading } from "./contexts/LoadingContext";
 import ScrollToTop from "./components/ScrollToTop";
+import LoadingScreen from "./components/LoadingScreen";
+import LoadingRouter from "./components/LoadingRouter";
 import Index from "./pages/Index";
 import SafariDestinations from "./pages/SafariDestinations";
 import Vehicles from "./pages/Vehicles";
@@ -16,26 +19,40 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+const AppContent = () => {
+  const { isLoading } = useLoading();
+
+  return (
+    <>
+      {isLoading && <LoadingScreen />}
+      <BrowserRouter>
+        <LoadingRouter>
+          <ScrollToTop />
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/safaris" element={<SafariDestinations />} />
+            <Route path="/vehicles" element={<Vehicles />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/testimonials" element={<TestimonialsPage />} />
+            <Route path="/book" element={<Book />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </LoadingRouter>
+      </BrowserRouter>
+    </>
+  );
+};
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/safaris" element={<SafariDestinations />} />
-          <Route path="/vehicles" element={<Vehicles />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/testimonials" element={<TestimonialsPage />} />
-          <Route path="/book" element={<Book />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
+    <LoadingProvider>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <AppContent />
+      </TooltipProvider>
+    </LoadingProvider>
   </QueryClientProvider>
 );
 

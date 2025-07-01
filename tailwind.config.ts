@@ -53,7 +53,7 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Safari-specific colors - removed gold colors
+				// Safari-specific colors with yellow accents
 				safari: {
 					'green-900': '#1B3B0A',
 					'green-800': '#2D5016',
@@ -65,6 +65,19 @@ export default {
 					'green-200': '#B3C4B3',
 					'green-100': '#D7E2D7',
 					'green-50': '#F0F5F0',
+				},
+				// Yellow accent colors for UI elements
+				'safari-gold': {
+					'900': '#B45309',
+					'800': '#C2410C',
+					'700': '#D97706',
+					'600': '#EA580C',
+					'500': '#F59E0B',
+					'400': '#FBBF24',
+					'300': '#FCD34D',
+					'200': '#FDE68A',
+					'100': '#FEF3C7',
+					'50': '#FFFBEB',
 				}
 			},
 			borderRadius: {
