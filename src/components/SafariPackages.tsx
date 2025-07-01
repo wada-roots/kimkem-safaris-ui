@@ -139,7 +139,7 @@ const SafariPackages = () => {
   };
 
   return (
-    <section id="safaris" className="py-20 bg-gradient-to-b from-white to-safari-green-50">
+    <section id="safaris" className="py-20">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">
