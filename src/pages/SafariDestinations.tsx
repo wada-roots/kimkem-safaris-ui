@@ -158,7 +158,7 @@ const SafariDestinations = () => {
       description:
         "Discover the enchanting Aberdare National Park, characterized by its misty highlands, bamboo forests, and spectacular waterfalls. This unique park offers a different safari experience with its cool climate and diverse ecosystems. The park is home to elephants, buffalo, rhinos, and the rare bongo antelope.",
       image:
-        "https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://images.pexels.com/photos/3042210/pexels-photo-3042210.jpeg",
       duration: "2-4 Days",
       price: "From $340/day",
       difficulty: "Moderate",
@@ -186,7 +186,7 @@ const SafariDestinations = () => {
       description:
         "Discover the unique Nairobi National Park, the only wildlife park in the world located within a capital city. This remarkable park offers incredible wildlife viewing opportunities against the backdrop of Nairobi's skyline. Home to lions, leopards, cheetahs, and over 400 bird species.",
       image:
-        "https://images.unsplash.com/photo-1466721591366-2d5fba72006d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://images.pexels.com/photos/9833512/pexels-photo-9833512.jpeg",
       duration: "Half Day - 2 Days",
       price: "From $180/day",
       difficulty: "Easy",
@@ -214,7 +214,7 @@ const SafariDestinations = () => {
       description:
         "Experience the tropical paradise of Diani Beach, one of Africa's most beautiful coastal destinations. With its pristine white sand beaches, crystal clear turquoise waters, and swaying coconut palms, Diani offers the perfect beach getaway. Enjoy water sports, coral reef diving, and beachfront relaxation.",
       image:
-        "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://images.pexels.com/photos/1476356/pexels-photo-1476356.jpeg",
       duration: "2-7 Days",
       price: "From $220/day",
       difficulty: "Easy",
@@ -242,7 +242,7 @@ const SafariDestinations = () => {
       description:
         "Discover the underwater wonders of Watamu Marine Park, a UNESCO World Heritage site renowned for its pristine coral reefs and diverse marine life. This marine paradise offers world-class diving, snorkeling, and fishing experiences. The park protects some of the most beautiful coral formations on the East African coast.",
       image:
-        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://images.pexels.com/photos/10303313/pexels-photo-10303313.jpeg",
       duration: "2-5 Days",
       price: "From $280/day",
       difficulty: "Easy to Moderate",
