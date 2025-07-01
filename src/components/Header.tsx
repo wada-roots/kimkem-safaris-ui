@@ -22,13 +22,14 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-lg">
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          {/* Logo - moved to left */}
-          <Link to="/" className="flex items-center space-x-3">
-            <img 
-              src="/lovable-uploads/660d9356-65c3-4d7a-92a7-ecc485dfb8a6.png" 
-              alt="Kimken Safaris" 
-              className="h-16 w-auto"
-            />
+          <Link to="/" className="flex items-center space-x-2">
+            <div className="w-10 h-10 bg-safari-gradient rounded-full flex items-center justify-center">
+              <span className="text-white font-bold text-lg">K</span>
+            </div>
+            <div>
+              <h1 className="text-xl font-bold safari-text-gradient">Kimkem Safaris</h1>
+              <p className="text-xs text-safari-green-600">Digital LKE</p>
+            </div>
           </Link>
 
           {/* Desktop Navigation - centered/left aligned */}
