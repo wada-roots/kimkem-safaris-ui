@@ -1,4 +1,3 @@
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Users, Fuel, Shield, Star } from 'lucide-react';
@@ -10,7 +9,7 @@ const Vehicles = () => {
       id: 1,
       name: "4X4 Toyota Land Cruiser",
       description: "The ultimate safari vehicle, built for rugged terrain and wildlife viewing. Features pop-up roof for optimal game viewing and photography.",
-      image: "https://images.unsplash.com/photo-1562979314-bee7453e911c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1612838320302-4b3b3f67e3ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       capacity: "6-8 Passengers",
       features: [
         "Pop-up roof for game viewing",
@@ -29,7 +28,7 @@ const Vehicles = () => {
       id: 2,
       name: "Safari Minibuses",
       description: "Comfortable and spacious minibuses perfect for group safaris. Equipped with large windows and elevated seating for better wildlife viewing.",
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1609501676727-3a4f986bc9b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       capacity: "10-14 Passengers",
       features: [
         "Large panoramic windows",
@@ -48,7 +47,7 @@ const Vehicles = () => {
       id: 3,
       name: "Open Roof Safari Van",
       description: "Experience the wild with an open roof safari van, offering 360-degree views and unobstructed photography opportunities.",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1612297055701-5765aa6b4e50?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       capacity: "8-10 Passengers",
       features: [
         "360-degree open roof viewing",
@@ -67,7 +66,7 @@ const Vehicles = () => {
       id: 4,
       name: "Toyota Prado",
       description: "Luxury safari vehicle offering comfort and reliability. Perfect for smaller groups seeking a premium safari experience.",
-      image: "https://images.unsplash.com/photo-1609501676725-7186f34fa90c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       capacity: "4-6 Passengers",
       features: [
         "Luxury interior finish",
@@ -86,7 +85,7 @@ const Vehicles = () => {
       id: 5,
       name: "Coaster Buses",
       description: "Large capacity buses ideal for group tours and multi-day safari expeditions. Comfortable seating and ample storage space.",
-      image: "https://images.unsplash.com/photo-1570125909517-53cb21c89ff2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1586796750683-58f6a4dacc4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       capacity: "25-30 Passengers",
       features: [
         "Spacious interior",
