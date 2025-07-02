@@ -17,8 +17,7 @@ const SafariDestinations = () => {
         "Witness the Great Migration and Africa's Big Five in Kenya's most famous reserve.",
       description:
         "Experience the pinnacle of African safari adventures in the world-renowned Maasai Mara. This iconic reserve offers unparalleled wildlife viewing opportunities, from the dramatic Great Migration to year-round Big Five encounters. The vast savannas stretch endlessly, dotted with acacia trees and teeming with life.",
-      image:
-        "https://images.pexels.com/photos/30705849/pexels-photo-30705849.jpeg",
+      image: "/images/destinations/maasai-mara.jpeg",
       duration: "3-5 Days",
       price: "From $380/day",
       difficulty: "Easy to Moderate",
@@ -45,8 +44,7 @@ const SafariDestinations = () => {
         "Marvel at the majestic elephants against the backdrop of Mount Kilimanjaro.",
       description:
         "Discover the land of giants in Amboseli National Park, where you can witness large herds of elephants roaming freely against the stunning backdrop of Mount Kilimanjaro. This park is a photographer's paradise, offering incredible opportunities to capture iconic African landscapes and wildlife moments.",
-      image:
-        "https://images.pexels.com/photos/19320975/pexels-photo-19320975.jpeg",
+      image: "/images/destinations/amboseli.jpeg",
       duration: "2-4 Days",
       price: "From $320/day",
       difficulty: "Easy",
@@ -73,8 +71,7 @@ const SafariDestinations = () => {
         "Witness the pink flamingo spectacle and diverse birdlife at this alkaline lake.",
       description:
         "Experience the vibrant colors of Lake Nakuru, famous for its large flocks of pink flamingos. This alkaline lake is a haven for birdwatchers, with over 400 species of birds. The park also hosts rhinos, lions, and other wildlife, making it a diverse and rewarding safari destination.",
-      image:
-        "https://images.pexels.com/photos/8341096/pexels-photo-8341096.jpeg",
+      image: "/images/destinations/lake-nakuru.jpeg",
       duration: "1-3 Days",
       price: "From $280/day",
       difficulty: "Easy",
@@ -101,8 +98,7 @@ const SafariDestinations = () => {
         "Explore Kenya's largest national park, divided into Tsavo East and West, offering diverse landscapes and wildlife.",
       description:
         "Discover the vast wilderness of Tsavo, Kenya's largest national park, divided into Tsavo East and Tsavo West. Tsavo East is known for its open plains and large elephant herds, while Tsavo West features rugged landscapes, volcanic hills, and the Mzima Springs, a natural oasis.",
-      image:
-        "https://images.pexels.com/photos/66898/elephant-cub-tsavo-kenya-66898.jpeg",
+      image: "/images/destinations/tsavo.jpeg",
       duration: "3-6 Days",
       price: "From $350/day",
       difficulty: "Moderate",
@@ -129,8 +125,7 @@ const SafariDestinations = () => {
         "Encounter unique wildlife species found only north of the equator in this rugged and remote reserve.",
       description:
         "Venture into the rugged and remote Samburu National Reserve, located north of the equator. This unique reserve is home to wildlife species not found elsewhere in Kenya, such as the Grevy's zebra, Somali ostrich, gerenuk, and reticulated giraffe. The Ewaso Ng'iro River flows through the reserve, attracting a variety of animals.",
-      image:
-        "https://images.pexels.com/photos/29435755/pexels-photo-29435755.jpeg",
+      image: "/images/destinations/samburu.jpeg",
       duration: "3-5 Days",
       price: "From $400/day",
       difficulty: "Moderate",
@@ -157,8 +152,7 @@ const SafariDestinations = () => {
         "Explore the misty highlands and unique wildlife of this mountainous park.",
       description:
         "Discover the enchanting Aberdare National Park, characterized by its misty highlands, bamboo forests, and spectacular waterfalls. This unique park offers a different safari experience with its cool climate and diverse ecosystems. The park is home to elephants, buffalo, rhinos, and the rare bongo antelope.",
-      image:
-        "https://images.pexels.com/photos/32798350/pexels-photo-32798350.jpeg",
+      image: "/images/destinations/aberdare.jpeg",
       duration: "2-4 Days",
       price: "From $340/day",
       difficulty: "Moderate",
@@ -185,8 +179,7 @@ const SafariDestinations = () => {
         "Experience wildlife viewing just minutes from Kenya's capital city.",
       description:
         "Discover the unique Nairobi National Park, the only wildlife park in the world located within a capital city. This remarkable park offers incredible wildlife viewing opportunities against the backdrop of Nairobi's skyline. Home to lions, leopards, cheetahs, and over 400 bird species.",
-      image:
-        "https://images.pexels.com/photos/9833512/pexels-photo-9833512.jpeg",
+      image: "/images/destinations/nairobi.jpeg",
       duration: "Half Day - 2 Days",
       price: "From $180/day",
       difficulty: "Easy",
@@ -213,8 +206,7 @@ const SafariDestinations = () => {
         "Relax on pristine white sand beaches with crystal clear waters and swaying palm trees.",
       description:
         "Experience the tropical paradise of Diani Beach, one of Africa's most beautiful coastal destinations. With its pristine white sand beaches, crystal clear turquoise waters, and swaying coconut palms, Diani offers the perfect beach getaway. Enjoy water sports, coral reef diving, and beachfront relaxation.",
-      image:
-        "https://images.pexels.com/photos/1476356/pexels-photo-1476356.jpeg",
+      image: "/images/destinations/diani-beach.jpeg",
       duration: "2-7 Days",
       price: "From $220/day",
       difficulty: "Easy",
