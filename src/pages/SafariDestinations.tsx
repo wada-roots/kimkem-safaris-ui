@@ -74,7 +74,7 @@ const SafariDestinations = () => {
       description:
         "Experience the vibrant colors of Lake Nakuru, famous for its large flocks of pink flamingos. This alkaline lake is a haven for birdwatchers, with over 400 species of birds. The park also hosts rhinos, lions, and other wildlife, making it a diverse and rewarding safari destination.",
       image:
-        "https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://images.pexels.com/photos/8341096/pexels-photo-8341096.jpeg",
       duration: "1-3 Days",
       price: "From $280/day",
       difficulty: "Easy",
