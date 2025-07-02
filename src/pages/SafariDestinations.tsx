@@ -158,7 +158,7 @@ const SafariDestinations = () => {
       description:
         "Discover the enchanting Aberdare National Park, characterized by its misty highlands, bamboo forests, and spectacular waterfalls. This unique park offers a different safari experience with its cool climate and diverse ecosystems. The park is home to elephants, buffalo, rhinos, and the rare bongo antelope.",
       image:
-        "https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://images.pexels.com/photos/32798350/pexels-photo-32798350.jpeg",
       duration: "2-4 Days",
       price: "From $340/day",
       difficulty: "Moderate",
