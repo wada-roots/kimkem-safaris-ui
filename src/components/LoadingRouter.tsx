@@ -1,7 +1,6 @@
-
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
-import { useLoading } from '@/contexts/LoadingContext';
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import { useLoading } from "@/contexts/LoadingContext";
 
 const LoadingRouter = ({ children }: { children: React.ReactNode }) => {
   const location = useLocation();
@@ -9,11 +8,11 @@ const LoadingRouter = ({ children }: { children: React.ReactNode }) => {
 
   useEffect(() => {
     startLoading();
-    
+
     // Simulate loading time for better UX
     const timer = setTimeout(() => {
       stopLoading();
-    }, 800);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, [location.pathname, startLoading, stopLoading]);
