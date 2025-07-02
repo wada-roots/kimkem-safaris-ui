@@ -43,11 +43,12 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply bg-white text-foreground font-sans;
   }
 
   html {
     scroll-behavior: smooth;
+    @apply bg-white;
   }
 }
 

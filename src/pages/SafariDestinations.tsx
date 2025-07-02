@@ -13,11 +13,17 @@ const SafariDestinations = () => {
     {
       id: 1,
       name: "Maasai Mara National Reserve",
+<<<<<<< HEAD
       shortDesc:
         "Witness the Great Migration and Africa's Big Five in Kenya's most famous reserve.",
       description:
         "Experience the pinnacle of African safari adventures in the world-renowned Maasai Mara. This iconic reserve offers unparalleled wildlife viewing opportunities, from the dramatic Great Migration to year-round Big Five encounters. The vast savannas stretch endlessly, dotted with acacia trees and teeming with life.",
       image: "/images/destinations/maasai-mara.jpeg",
+=======
+      shortDesc: "Witness the Great Migration and Africa's Big Five in Kenya's most famous reserve.",
+      description: "Experience the pinnacle of African safari adventures in the world-renowned Maasai Mara. This iconic reserve offers unparalleled wildlife viewing opportunities, from the dramatic Great Migration to year-round Big Five encounters. The vast savannas stretch endlessly, dotted with acacia trees and teeming with life.",
+      image: "https://images.unsplash.com/photo-1593341646782-e0b495cff86d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+>>>>>>> main
       duration: "3-5 Days",
       price: "From $380/day",
       difficulty: "Easy to Moderate",
@@ -40,11 +46,17 @@ const SafariDestinations = () => {
     {
       id: 2,
       name: "Amboseli National Park",
+<<<<<<< HEAD
       shortDesc:
         "Marvel at the majestic elephants against the backdrop of Mount Kilimanjaro.",
       description:
         "Discover the land of giants in Amboseli National Park, where you can witness large herds of elephants roaming freely against the stunning backdrop of Mount Kilimanjaro. This park is a photographer's paradise, offering incredible opportunities to capture iconic African landscapes and wildlife moments.",
       image: "/images/destinations/amboseli.jpeg",
+=======
+      shortDesc: "Marvel at the majestic elephants against the backdrop of Mount Kilimanjaro.",
+      description: "Discover the land of giants in Amboseli National Park, where you can witness large herds of elephants roaming freely against the stunning backdrop of Mount Kilimanjaro. This park is a photographer's paradise, offering incredible opportunities to capture iconic African landscapes and wildlife moments.",
+      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+>>>>>>> main
       duration: "2-4 Days",
       price: "From $320/day",
       difficulty: "Easy",
@@ -67,11 +79,17 @@ const SafariDestinations = () => {
     {
       id: 3,
       name: "Lake Nakuru National Park",
+<<<<<<< HEAD
       shortDesc:
         "Witness the pink flamingo spectacle and diverse birdlife at this alkaline lake.",
       description:
         "Experience the vibrant colors of Lake Nakuru, famous for its large flocks of pink flamingos. This alkaline lake is a haven for birdwatchers, with over 400 species of birds. The park also hosts rhinos, lions, and other wildlife, making it a diverse and rewarding safari destination.",
       image: "/images/destinations/lake-nakuru.jpeg",
+=======
+      shortDesc: "Witness the pink flamingo spectacle and diverse birdlife at this alkaline lake.",
+      description: "Experience the vibrant colors of Lake Nakuru, famous for its large flocks of pink flamingos. This alkaline lake is a haven for birdwatchers, with over 400 species of birds. The park also hosts rhinos, lions, and other wildlife, making it a diverse and rewarding safari destination.",
+      image: "https://images.unsplash.com/photo-1606820574330-e535d3d4d42c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+>>>>>>> main
       duration: "1-3 Days",
       price: "From $280/day",
       difficulty: "Easy",
@@ -94,11 +112,17 @@ const SafariDestinations = () => {
     {
       id: 4,
       name: "Tsavo National Park",
+<<<<<<< HEAD
       shortDesc:
         "Explore Kenya's largest national park, divided into Tsavo East and West, offering diverse landscapes and wildlife.",
       description:
         "Discover the vast wilderness of Tsavo, Kenya's largest national park, divided into Tsavo East and Tsavo West. Tsavo East is known for its open plains and large elephant herds, while Tsavo West features rugged landscapes, volcanic hills, and the Mzima Springs, a natural oasis.",
       image: "/images/destinations/tsavo.jpeg",
+=======
+      shortDesc: "Explore Kenya's largest national park, divided into Tsavo East and West, offering diverse landscapes and wildlife.",
+      description: "Discover the vast wilderness of Tsavo, Kenya's largest national park, divided into Tsavo East and Tsavo West. Tsavo East is known for its open plains and large elephant herds, while Tsavo West features rugged landscapes, volcanic hills, and the Mzima Springs, a natural oasis.",
+      image: "https://images.unsplash.com/photo-1612818476939-ce04287c22cc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+>>>>>>> main
       duration: "3-6 Days",
       price: "From $350/day",
       difficulty: "Moderate",
@@ -121,11 +145,17 @@ const SafariDestinations = () => {
     {
       id: 5,
       name: "Samburu National Reserve",
+<<<<<<< HEAD
       shortDesc:
         "Encounter unique wildlife species found only north of the equator in this rugged and remote reserve.",
       description:
         "Venture into the rugged and remote Samburu National Reserve, located north of the equator. This unique reserve is home to wildlife species not found elsewhere in Kenya, such as the Grevy's zebra, Somali ostrich, gerenuk, and reticulated giraffe. The Ewaso Ng'iro River flows through the reserve, attracting a variety of animals.",
       image: "/images/destinations/samburu.jpeg",
+=======
+      shortDesc: "Encounter unique wildlife species found only north of the equator in this rugged and remote reserve.",
+      description: "Venture into the rugged and remote Samburu National Reserve, located north of the equator. This unique reserve is home to wildlife species not found elsewhere in Kenya, such as the Grevy's zebra, Somali ostrich, gerenuk, and reticulated giraffe. The Ewaso Ng'iro River flows through the reserve, attracting a variety of animals.",
+      image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+>>>>>>> main
       duration: "3-5 Days",
       price: "From $400/day",
       difficulty: "Moderate",
@@ -148,11 +178,17 @@ const SafariDestinations = () => {
     {
       id: 6,
       name: "Aberdare National Park",
+<<<<<<< HEAD
       shortDesc:
         "Explore the misty highlands and unique wildlife of this mountainous park.",
       description:
         "Discover the enchanting Aberdare National Park, characterized by its misty highlands, bamboo forests, and spectacular waterfalls. This unique park offers a different safari experience with its cool climate and diverse ecosystems. The park is home to elephants, buffalo, rhinos, and the rare bongo antelope.",
       image: "/images/destinations/aberdare.jpeg",
+=======
+      shortDesc: "Explore the misty highlands and unique wildlife of this mountainous park.",
+      description: "Discover the enchanting Aberdare National Park, characterized by its misty highlands, bamboo forests, and spectacular waterfalls. This unique park offers a different safari experience with its cool climate and diverse ecosystems. The park is home to elephants, buffalo, rhinos, and the rare bongo antelope.",
+      image: "https://images.unsplash.com/photo-1597149877589-52924b722fdf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+>>>>>>> main
       duration: "2-4 Days",
       price: "From $340/day",
       difficulty: "Moderate",
@@ -175,11 +211,9 @@ const SafariDestinations = () => {
     {
       id: 7,
       name: "Nairobi National Park",
-      shortDesc:
-        "Experience wildlife viewing just minutes from Kenya's capital city.",
-      description:
-        "Discover the unique Nairobi National Park, the only wildlife park in the world located within a capital city. This remarkable park offers incredible wildlife viewing opportunities against the backdrop of Nairobi's skyline. Home to lions, leopards, cheetahs, and over 400 bird species.",
-      image: "/images/destinations/nairobi.jpeg",
+      shortDesc: "Experience wildlife viewing just minutes from Kenya's capital city.",
+      description: "Discover the unique Nairobi National Park, the only wildlife park in the world located within a capital city. This remarkable park offers incredible wildlife viewing opportunities against the backdrop of Nairobi's skyline. Home to lions, leopards, cheetahs, and over 400 bird species.",
+      image: "https://images.unsplash.com/photo-1605538883669-825200433431?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       duration: "Half Day - 2 Days",
       price: "From $180/day",
       difficulty: "Easy",
@@ -202,11 +236,17 @@ const SafariDestinations = () => {
     {
       id: 8,
       name: "Diani Beach",
+<<<<<<< HEAD
       shortDesc:
         "Relax on pristine white sand beaches with crystal clear waters and swaying palm trees.",
       description:
         "Experience the tropical paradise of Diani Beach, one of Africa's most beautiful coastal destinations. With its pristine white sand beaches, crystal clear turquoise waters, and swaying coconut palms, Diani offers the perfect beach getaway. Enjoy water sports, coral reef diving, and beachfront relaxation.",
       image: "/images/destinations/diani-beach.jpeg",
+=======
+      shortDesc: "Relax on pristine white sand beaches with crystal clear waters and swaying palm trees.",
+      description: "Experience the tropical paradise of Diani Beach, one of Africa's most beautiful coastal destinations. With its pristine white sand beaches, crystal clear turquoise waters, and swaying coconut palms, Diani offers the perfect beach getaway. Enjoy water sports, coral reef diving, and beachfront relaxation.",
+      image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+>>>>>>> main
       duration: "2-7 Days",
       price: "From $220/day",
       difficulty: "Easy",
@@ -229,11 +269,17 @@ const SafariDestinations = () => {
     {
       id: 9,
       name: "Watamu Marine Park",
+<<<<<<< HEAD
       shortDesc:
         "Explore vibrant coral reefs and enjoy water sports in this UNESCO World Heritage marine park.",
       description:
         "Discover the underwater wonders of Watamu Marine Park, a UNESCO World Heritage site renowned for its pristine coral reefs and diverse marine life. This marine paradise offers world-class diving, snorkeling, and fishing experiences. The park protects some of the most beautiful coral formations on the East African coast.",
       image: "/images/destinations/watamu.jpeg",
+=======
+      shortDesc: "Explore vibrant coral reefs and enjoy water sports in this UNESCO World Heritage marine park.",
+      description: "Discover the underwater wonders of Watamu Marine Park, a UNESCO World Heritage site renowned for its pristine coral reefs and diverse marine life. This marine paradise offers world-class diving, snorkeling, and fishing experiences. The park protects some of the most beautiful coral formations on the East African coast.",
+      image: "https://images.unsplash.com/photo-1582582621959-48d27397dc69?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+>>>>>>> main
       duration: "2-5 Days",
       price: "From $280/day",
       difficulty: "Easy to Moderate",
