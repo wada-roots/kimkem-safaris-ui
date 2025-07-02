@@ -132,8 +132,7 @@ const SafariPackages = () => {
       title: "Diani Beach Getaway",
       description:
         "Relax on pristine white sand beaches with crystal clear waters and swaying palm trees.",
-      image:
-        "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/images/destinations/diani-beach.jpeg",
       duration: "3 Days",
       location: "Diani, Mombasa",
       rating: 4.8,
@@ -150,8 +149,7 @@ const SafariPackages = () => {
       title: "Watamu Marine Park",
       description:
         "Explore vibrant coral reefs and enjoy water sports in this UNESCO World Heritage marine park.",
-      image:
-        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/images/destinations/watamu.jpeg",
       duration: "4 Days",
       location: "Watamu",
       rating: 4.7,
