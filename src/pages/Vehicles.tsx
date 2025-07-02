@@ -90,8 +90,7 @@ const Vehicles = () => {
       name: "Coaster Buses",
       description:
         "Large capacity buses ideal for group tours and multi-day safari expeditions. Comfortable seating and ample storage space.",
-      image:
-        "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/images/vehicles/coaster-bus.jpeg",
       capacity: "25-30 Passengers",
       features: [
         "Spacious interior",
