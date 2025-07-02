@@ -16,11 +16,6 @@ const queryClient = new QueryClient();
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
-<<<<<<< HEAD
-=======
-      <Toaster />
-      <Sonner />
->>>>>>> main
       <BrowserRouter>
         <ScrollToTop />
         <Routes>
