@@ -1,19 +1,17 @@
-
+import { useMemo } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import LazyImage from "@/components/LazyImage";
 import { Users, Fuel, Shield, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Vehicles = () => {
-  const vehicles = [
+  const vehicles = useMemo(() => [
     {
       id: 1,
       name: "4X4 Toyota Land Cruiser",
-
-      description:
-        "The ultimate safari vehicle, built for rugged terrain and wildlife viewing. Features pop-up roof for optimal game viewing and photography.",
+      description: "The ultimate safari vehicle, built for rugged terrain and wildlife viewing. Features pop-up roof for optimal game viewing and photography.",
       image: "/images/vehicles/land-cruiser.jpeg",
-
       capacity: "6-8 Passengers",
       features: [
         "Pop-up roof for game viewing",
@@ -31,11 +29,8 @@ const Vehicles = () => {
     {
       id: 2,
       name: "Safari Minibuses",
-
-      description:
-        "Comfortable and spacious minibuses perfect for group safaris. Equipped with large windows and elevated seating for better wildlife viewing.",
+      description: "Comfortable and spacious minibuses perfect for group safaris. Equipped with large windows and elevated seating for better wildlife viewing.",
       image: "/images/vehicles/minibus.jpeg",
-
       capacity: "10-14 Passengers",
       features: [
         "Large panoramic windows",
@@ -53,11 +48,8 @@ const Vehicles = () => {
     {
       id: 3,
       name: "Open Roof Safari Van",
-
-      description:
-        "Experience the wild with an open roof safari van, offering 360-degree views and unobstructed photography opportunities.",
+      description: "Experience the wild with an open roof safari van, offering 360-degree views and unobstructed photography opportunities.",
       image: "/images/vehicles/safari-van.jpeg",
-
       capacity: "8-10 Passengers",
       features: [
         "360-degree open roof viewing",
@@ -75,11 +67,8 @@ const Vehicles = () => {
     {
       id: 4,
       name: "Toyota Prado",
-
-      description:
-        "Luxury safari vehicle offering comfort and reliability. Perfect for smaller groups seeking a premium safari experience.",
+      description: "Luxury safari vehicle offering comfort and reliability. Perfect for smaller groups seeking a premium safari experience.",
       image: "/images/vehicles/prado.jpeg",
-
       capacity: "4-6 Passengers",
       features: [
         "Luxury interior finish",
@@ -97,11 +86,8 @@ const Vehicles = () => {
     {
       id: 5,
       name: "Coaster Buses",
-
-      description:
-        "Large capacity buses ideal for group tours and multi-day safari expeditions. Comfortable seating and ample storage space.",
+      description: "Large capacity buses ideal for group tours and multi-day safari expeditions. Comfortable seating and ample storage space.",
       image: "/images/vehicles/coaster-bus.jpeg",
-
       capacity: "25-30 Passengers",
       features: [
         "Spacious interior",
@@ -116,13 +102,12 @@ const Vehicles = () => {
       fuelType: "Diesel",
       transmission: "Manual",
     },
-  ];
+  ], []);
 
   return (
     <div className="min-h-screen">
       <Header />
 
-      {/* Hero Section */}
       <section className="pt-24 pb-16 safari-hero-bg">
         <div className="container mx-auto px-4 text-center text-white">
           <div className="max-w-4xl mx-auto">
@@ -138,17 +123,16 @@ const Vehicles = () => {
         </div>
       </section>
 
-      {/* Vehicles Grid */}
       <section className="py-20 bg-gradient-to-b from-white to-safari-green-50">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {vehicles.map((vehicle, index) => (
+            {vehicles.map((vehicle) => (
               <div
                 key={vehicle.id}
                 className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
               >
                 <div className="relative">
-                  <img
+                  <LazyImage
                     src={vehicle.image}
                     alt={vehicle.name}
                     className="w-full h-64 object-cover"
@@ -172,7 +156,6 @@ const Vehicles = () => {
                     {vehicle.description}
                   </p>
 
-                  {/* Vehicle Specs */}
                   <div className="grid grid-cols-2 gap-4 mb-6">
                     <div className="flex items-center text-sm text-safari-green-700">
                       <Users className="w-4 h-4 mr-2 text-safari-gold-600" />
@@ -188,7 +171,6 @@ const Vehicles = () => {
                     </div>
                   </div>
 
-                  {/* Features */}
                   <div className="mb-6">
                     <h4 className="font-semibold text-safari-green-800 mb-3">
                       Features:
