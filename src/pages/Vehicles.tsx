@@ -50,8 +50,7 @@ const Vehicles = () => {
       name: "Open Roof Safari Van",
       description:
         "Experience the wild with an open roof safari van, offering 360-degree views and unobstructed photography opportunities.",
-      image:
-        "https://images.unsplash.com/photo-1527736947477-2790e28f3443?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/images/vehicles/safari-van.jpeg",
       capacity: "8-10 Passengers",
       features: [
         "360-degree open roof viewing",
@@ -71,8 +70,7 @@ const Vehicles = () => {
       name: "Toyota Prado",
       description:
         "Luxury safari vehicle offering comfort and reliability. Perfect for smaller groups seeking a premium safari experience.",
-      image:
-        "https://images.pexels.com/photos/10740862/pexels-photo-10740862.jpeg",
+      image: "/images/vehicles/prado.jpeg",
       capacity: "4-6 Passengers",
       features: [
         "Luxury interior finish",
