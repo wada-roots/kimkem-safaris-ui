@@ -1,5 +1,4 @@
-
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import React, { createContext, useContext, useState, ReactNode } from "react";
 
 interface LoadingContextType {
   isLoading: boolean;
@@ -13,7 +12,7 @@ const LoadingContext = createContext<LoadingContextType | undefined>(undefined);
 export const useLoading = () => {
   const context = useContext(LoadingContext);
   if (!context) {
-    throw new Error('useLoading must be used within a LoadingProvider');
+    throw new Error("useLoading must be used within a LoadingProvider");
   }
   return context;
 };
@@ -23,13 +22,15 @@ interface LoadingProviderProps {
 }
 
 export const LoadingProvider = ({ children }: LoadingProviderProps) => {
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   const startLoading = () => setIsLoading(true);
   const stopLoading = () => setIsLoading(false);
 
   return (
-    <LoadingContext.Provider value={{ isLoading, setIsLoading, startLoading, stopLoading }}>
+    <LoadingContext.Provider
+      value={{ isLoading, setIsLoading, startLoading, stopLoading }}
+    >
       {children}
     </LoadingContext.Provider>
   );
