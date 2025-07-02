@@ -1,15 +1,14 @@
-
-import { ChevronDown } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { ChevronDown } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
     <section id="home" className="min-h-screen relative overflow-hidden">
       {/* Full-screen background image */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')"
+          backgroundImage: "url('/images/destinations/maasai-mara.jpeg')",
         }}
       ></div>
 
@@ -22,11 +21,15 @@ const Hero = () => {
             <span className="block text-white/90">Await You</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto leading-relaxed">
-            Experience the magic of Africa's wilderness in luxury tented camps. 
-            Create memories that will last a lifetime in Kenya's most spectacular landscapes.
+            Experience the magic of Africa's wilderness in luxury tented camps.
+            Create memories that will last a lifetime in Kenya's most
+            spectacular landscapes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
-            <Link to="/safaris" className="safari-btn-secondary text-lg px-10 py-4">
+            <Link
+              to="/safaris"
+              className="safari-btn-secondary text-lg px-10 py-4"
+            >
               Explore Safaris
             </Link>
             <button className="border-2 border-safari-gold-400 text-safari-gold-400 hover:bg-safari-gold-400 hover:text-white font-semibold py-4 px-10 rounded-lg transition-all duration-300 text-lg">
