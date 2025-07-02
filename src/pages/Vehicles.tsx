@@ -10,8 +10,7 @@ const Vehicles = () => {
       name: "4X4 Toyota Land Cruiser",
       description:
         "The ultimate safari vehicle, built for rugged terrain and wildlife viewing. Features pop-up roof for optimal game viewing and photography.",
-      image:
-        "https://images.pexels.com/photos/29869232/pexels-photo-29869232.jpeg",
+      image: "/images/vehicles/land-cruiser.jpeg",
       capacity: "6-8 Passengers",
       features: [
         "Pop-up roof for game viewing",
@@ -31,8 +30,7 @@ const Vehicles = () => {
       name: "Safari Minibuses",
       description:
         "Comfortable and spacious minibuses perfect for group safaris. Equipped with large windows and elevated seating for better wildlife viewing.",
-      image:
-        "https://images.pexels.com/photos/32798350/pexels-photo-32798350.jpeg",
+      image: "/images/vehicles/minibus.jpeg",
       capacity: "10-14 Passengers",
       features: [
         "Large panoramic windows",
