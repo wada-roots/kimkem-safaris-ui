@@ -233,8 +233,7 @@ const SafariDestinations = () => {
         "Explore vibrant coral reefs and enjoy water sports in this UNESCO World Heritage marine park.",
       description:
         "Discover the underwater wonders of Watamu Marine Park, a UNESCO World Heritage site renowned for its pristine coral reefs and diverse marine life. This marine paradise offers world-class diving, snorkeling, and fishing experiences. The park protects some of the most beautiful coral formations on the East African coast.",
-      image:
-        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/images/destinations/watamu.jpeg",
       duration: "2-5 Days",
       price: "From $280/day",
       difficulty: "Easy to Moderate",
