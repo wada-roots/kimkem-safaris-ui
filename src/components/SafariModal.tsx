@@ -22,8 +22,8 @@ const SafariModal = ({ isOpen, onClose, safari }: SafariModalProps) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
-      <div className="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+      <div className="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl transform translate-x-0 translate-y-0">
         {/* Header */}
         <div className="relative">
           <img 
@@ -33,7 +33,7 @@ const SafariModal = ({ isOpen, onClose, safari }: SafariModalProps) => {
           />
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 bg-white/90 hover:bg-white rounded-full p-2 transition-colors"
+            className="absolute top-4 right-4 bg-white/90 hover:bg-white rounded-full p-2 transition-colors z-10"
           >
             <X size={24} className="text-safari-green-800" />
           </button>
