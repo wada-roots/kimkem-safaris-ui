@@ -1,16 +1,17 @@
-
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import { Users, Fuel, Shield, Star } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { Users, Fuel, Shield, Star } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Vehicles = () => {
   const vehicles = [
     {
       id: 1,
       name: "4X4 Toyota Land Cruiser",
-      description: "The ultimate safari vehicle, built for rugged terrain and wildlife viewing. Features pop-up roof for optimal game viewing and photography.",
-      image: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      description:
+        "The ultimate safari vehicle, built for rugged terrain and wildlife viewing. Features pop-up roof for optimal game viewing and photography.",
+      image:
+        "https://images.pexels.com/photos/29869232/pexels-photo-29869232.jpeg",
       capacity: "6-8 Passengers",
       features: [
         "Pop-up roof for game viewing",
@@ -18,18 +19,20 @@ const Vehicles = () => {
         "Air conditioning",
         "Power outlets for charging",
         "Cooler for refreshments",
-        "Professional driver-guide"
+        "Professional driver-guide",
       ],
       priceRange: "From $120/day",
       rating: 4.9,
       fuelType: "Diesel",
-      transmission: "Manual/Automatic"
+      transmission: "Manual/Automatic",
     },
     {
       id: 2,
       name: "Safari Minibuses",
-      description: "Comfortable and spacious minibuses perfect for group safaris. Equipped with large windows and elevated seating for better wildlife viewing.",
-      image: "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      description:
+        "Comfortable and spacious minibuses perfect for group safaris. Equipped with large windows and elevated seating for better wildlife viewing.",
+      image:
+        "https://images.pexels.com/photos/32798350/pexels-photo-32798350.jpeg",
       capacity: "10-14 Passengers",
       features: [
         "Large panoramic windows",
@@ -37,18 +40,20 @@ const Vehicles = () => {
         "Air conditioning system",
         "Ample luggage space",
         "PA system for guide commentary",
-        "Emergency first aid kit"
+        "Emergency first aid kit",
       ],
       priceRange: "From $150/day",
       rating: 4.7,
       fuelType: "Diesel",
-      transmission: "Manual"
+      transmission: "Manual",
     },
     {
       id: 3,
       name: "Open Roof Safari Van",
-      description: "Experience the wild with an open roof safari van, offering 360-degree views and unobstructed photography opportunities.",
-      image: "https://images.unsplash.com/photo-1527736947477-2790e28f3443?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      description:
+        "Experience the wild with an open roof safari van, offering 360-degree views and unobstructed photography opportunities.",
+      image:
+        "https://images.unsplash.com/photo-1527736947477-2790e28f3443?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       capacity: "8-10 Passengers",
       features: [
         "360-degree open roof viewing",
@@ -56,18 +61,20 @@ const Vehicles = () => {
         "Comfortable bench seating",
         "Sun protection canopy",
         "Dust protection screens",
-        "Professional wildlife guide"
+        "Professional wildlife guide",
       ],
       priceRange: "From $140/day",
       rating: 4.8,
       fuelType: "Diesel",
-      transmission: "Manual"
+      transmission: "Manual",
     },
     {
       id: 4,
       name: "Toyota Prado",
-      description: "Luxury safari vehicle offering comfort and reliability. Perfect for smaller groups seeking a premium safari experience.",
-      image: "https://images.unsplash.com/photo-1506815444479-bfdb1e96c566?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      description:
+        "Luxury safari vehicle offering comfort and reliability. Perfect for smaller groups seeking a premium safari experience.",
+      image:
+        "https://images.pexels.com/photos/10740862/pexels-photo-10740862.jpeg",
       capacity: "4-6 Passengers",
       features: [
         "Luxury interior finish",
@@ -75,18 +82,20 @@ const Vehicles = () => {
         "Climate control",
         "Premium sound system",
         "Leather seating",
-        "VIP safari experience"
+        "VIP safari experience",
       ],
       priceRange: "From $180/day",
       rating: 4.9,
       fuelType: "Petrol",
-      transmission: "Automatic"
+      transmission: "Automatic",
     },
     {
       id: 5,
       name: "Coaster Buses",
-      description: "Large capacity buses ideal for group tours and multi-day safari expeditions. Comfortable seating and ample storage space.",
-      image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      description:
+        "Large capacity buses ideal for group tours and multi-day safari expeditions. Comfortable seating and ample storage space.",
+      image:
+        "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       capacity: "25-30 Passengers",
       features: [
         "Spacious interior",
@@ -94,19 +103,19 @@ const Vehicles = () => {
         "Large windows",
         "Overhead storage",
         "Onboard restroom",
-        "Entertainment system"
+        "Entertainment system",
       ],
       priceRange: "From $250/day",
       rating: 4.6,
       fuelType: "Diesel",
-      transmission: "Manual"
-    }
+      transmission: "Manual",
+    },
   ];
 
   return (
     <div className="min-h-screen">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="pt-24 pb-16 safari-hero-bg">
         <div className="container mx-auto px-4 text-center text-white">
@@ -116,7 +125,8 @@ const Vehicles = () => {
               <span className="block text-safari-gold-400">Vehicles</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto">
-              Choose from our fleet of specially equipped safari vehicles, designed for comfort and optimal wildlife viewing.
+              Choose from our fleet of specially equipped safari vehicles,
+              designed for comfort and optimal wildlife viewing.
             </p>
           </div>
         </div>
@@ -127,13 +137,13 @@ const Vehicles = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {vehicles.map((vehicle, index) => (
-              <div 
-                key={vehicle.id} 
+              <div
+                key={vehicle.id}
                 className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
               >
                 <div className="relative">
-                  <img 
-                    src={vehicle.image} 
+                  <img
+                    src={vehicle.image}
                     alt={vehicle.name}
                     className="w-full h-64 object-cover"
                   />
@@ -142,14 +152,20 @@ const Vehicles = () => {
                   </div>
                   <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full flex items-center">
                     <Star size={16} className="text-safari-gold-600 mr-1" />
-                    <span className="text-safari-green-800 font-bold">{vehicle.rating}</span>
+                    <span className="text-safari-green-800 font-bold">
+                      {vehicle.rating}
+                    </span>
                   </div>
                 </div>
-                
+
                 <div className="p-6">
-                  <h3 className="text-2xl font-bold text-safari-green-800 mb-3">{vehicle.name}</h3>
-                  <p className="text-safari-green-600 mb-4 leading-relaxed">{vehicle.description}</p>
-                  
+                  <h3 className="text-2xl font-bold text-safari-green-800 mb-3">
+                    {vehicle.name}
+                  </h3>
+                  <p className="text-safari-green-600 mb-4 leading-relaxed">
+                    {vehicle.description}
+                  </p>
+
                   {/* Vehicle Specs */}
                   <div className="grid grid-cols-2 gap-4 mb-6">
                     <div className="flex items-center text-sm text-safari-green-700">
@@ -168,22 +184,29 @@ const Vehicles = () => {
 
                   {/* Features */}
                   <div className="mb-6">
-                    <h4 className="font-semibold text-safari-green-800 mb-3">Features:</h4>
+                    <h4 className="font-semibold text-safari-green-800 mb-3">
+                      Features:
+                    </h4>
                     <div className="grid grid-cols-1 gap-2">
                       {vehicle.features.map((feature, idx) => (
                         <div key={idx} className="flex items-start">
                           <div className="w-2 h-2 bg-safari-gold-600 rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                          <span className="text-safari-green-700 text-sm">{feature}</span>
+                          <span className="text-safari-green-700 text-sm">
+                            {feature}
+                          </span>
                         </div>
                       ))}
                     </div>
                   </div>
-                  
+
                   <div className="flex gap-3">
                     <button className="safari-btn-secondary flex-1">
                       View Details
                     </button>
-                    <Link to="/book" className="safari-btn-primary flex-1 text-center">
+                    <Link
+                      to="/book"
+                      className="safari-btn-primary flex-1 text-center"
+                    >
                       Book This Vehicle
                     </Link>
                   </div>
