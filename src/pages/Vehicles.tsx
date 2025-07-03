@@ -1,3 +1,4 @@
+
 import { useMemo } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -30,7 +31,7 @@ const Vehicles = () => {
       id: 2,
       name: "Safari Minibuses",
       description: "Comfortable and spacious minibuses perfect for group safaris. Equipped with large windows and elevated seating for better wildlife viewing.",
-      image: "/images/vehicles/minibus.jpeg",
+      image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       capacity: "10-14 Passengers",
       features: [
         "Large panoramic windows",
@@ -49,7 +50,7 @@ const Vehicles = () => {
       id: 3,
       name: "Open Roof Safari Van",
       description: "Experience the wild with an open roof safari van, offering 360-degree views and unobstructed photography opportunities.",
-      image: "/images/vehicles/safari-van.jpeg",
+      image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       capacity: "8-10 Passengers",
       features: [
         "360-degree open roof viewing",
@@ -193,7 +194,7 @@ const Vehicles = () => {
                     </button>
                     <Link
                       to="/book"
-                      className="safari-btn-primary flex-1 text-center"
+                      className="safari-btn-primary flex-1 text-center hidden md:block"
                     >
                       Book This Vehicle
                     </Link>

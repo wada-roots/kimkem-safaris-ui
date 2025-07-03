@@ -185,9 +185,9 @@ const SafariDestinations = () => {
       name: "Nairobi National Park",
       shortDesc: "Experience wildlife viewing just minutes from Kenya's capital city.",
       description: "Discover the unique Nairobi National Park, the only wildlife park in the world located within a capital city. This remarkable park offers incredible wildlife viewing opportunities against the backdrop of Nairobi's skyline. Home to lions, leopards, cheetahs, and over 400 bird species.",
-      image: "https://images.unsplash.com/photo-1605538883669-825200433431?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/images/destinations/nairobi.jpeg",
       duration: "Half Day - 2 Days",
-       mainprice: "From $180/day",
+      price: "From $180/day",
       difficulty: "Easy",
       bestTime: "Year-round",
       highlights: [
@@ -340,7 +340,7 @@ const SafariDestinations = () => {
                     </button>
                     <Link
                       to={`/book?destination=${encodeURIComponent(safari.name)}`}
-                      className="safari-btn-primary flex-1 text-center"
+                      className="safari-btn-primary flex-1 text-center hidden md:block"
                     >
                       Book Now
                     </Link>

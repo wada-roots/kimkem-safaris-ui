@@ -1,3 +1,4 @@
+
 import { ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -15,12 +16,12 @@ const Hero = () => {
       {/* Content */}
       <div className="container mx-auto px-4 text-center text-white z-10 relative flex items-center justify-center min-h-screen">
         <div className="max-w-4xl mx-auto animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight">
             <span className="block text-safari-gold-400">Lifetime</span>
             <span className="block">Safari Adventures</span>
             <span className="block text-white/90">Await You</span>
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto leading-relaxed">
             Experience the magic of Africa's wilderness in luxury tented camps.
             Create memories that will last a lifetime in Kenya's most
             spectacular landscapes.
