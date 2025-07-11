@@ -1,3 +1,4 @@
+
 import { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
@@ -264,11 +265,13 @@ const SafariDestinations = () => {
   ], []);
 
   const handleLearnMore = (safari: any) => {
+    console.log('Learn More clicked for:', safari.name);
     setSelectedSafari(safari);
     setIsModalOpen(true);
   };
 
   const closeModal = () => {
+    console.log('Closing modal');
     setIsModalOpen(false);
     setSelectedSafari(null);
   };
