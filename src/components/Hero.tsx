@@ -5,13 +5,24 @@ import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <section id="home" className="min-h-screen relative overflow-hidden">
-      {/* Full-screen background image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: "url('/images/destinations/maasai-mara.jpeg')",
-        }}
-      ></div>
+      {/* Full-screen background video */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover"
+        autoPlay
+        muted
+        loop
+        playsInline
+      >
+        <source src="https://videos.pexels.com/video-files/2499611/2499611-uhd_2560_1440_30fps.mp4" type="video/mp4" />
+        <source src="https://videos.pexels.com/video-files/855564/855564-hd_1920_1080_25fps.mp4" type="video/mp4" />
+        {/* Fallback image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: "url('/images/destinations/maasai-mara.jpeg')",
+          }}
+        ></div>
+      </video>
 
       {/* Content */}
       <div className="container mx-auto px-4 text-center text-white z-10 relative flex items-center justify-center min-h-screen">

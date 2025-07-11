@@ -6,7 +6,6 @@ import { useEffect } from 'react';
 interface SafariModalProps {
   isOpen: boolean;
   onClose: () => void;
-  buttonPosition?: { x: number; y: number };
   safari: {
     name: string;
     description: string;
@@ -20,7 +19,7 @@ interface SafariModalProps {
   };
 }
 
-const SafariModal = ({ isOpen, onClose, buttonPosition, safari }: SafariModalProps) => {
+const SafariModal = ({ isOpen, onClose, safari }: SafariModalProps) => {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
@@ -57,10 +56,7 @@ const SafariModal = ({ isOpen, onClose, buttonPosition, safari }: SafariModalPro
       onClick={onClose}
     >
       <div 
-        className="bg-white rounded-2xl max-w-4xl w-full shadow-2xl max-h-[90vh] overflow-y-auto my-4 animate-slide-down-fade"
-        style={buttonPosition ? {
-          transformOrigin: `${buttonPosition.x}px ${buttonPosition.y}px`
-        } : undefined}
+        className="bg-white rounded-2xl max-w-6xl w-[95vw] shadow-2xl max-h-[95vh] overflow-y-auto my-4 animate-slide-down-fade"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header with Image and Title Overlay */}
