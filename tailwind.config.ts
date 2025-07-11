@@ -131,6 +131,16 @@ export default {
 						opacity: '1',
 						transform: 'scale(1)'
 					}
+				},
+				'slide-down-fade': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(-20px) scale(0.95)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0) scale(1)'
+					}
 				}
 			},
 			animation: {
@@ -138,7 +148,8 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.6s ease-out',
 				'slide-in-left': 'slide-in-left 0.6s ease-out',
-				'scale-in': 'scale-in 0.4s ease-out'
+				'scale-in': 'scale-in 0.4s ease-out',
+				'slide-down-fade': 'slide-down-fade 0.4s ease-out'
 			},
 			backgroundImage: {
 				'safari-gradient': 'linear-gradient(135deg, #2D5016 0%, #4A7C59 50%, #5B8A6B 100%)',

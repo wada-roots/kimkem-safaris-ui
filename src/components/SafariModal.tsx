@@ -56,7 +56,7 @@ const SafariModal = ({ isOpen, onClose, safari }: SafariModalProps) => {
       onClick={onClose}
     >
       <div 
-        className="bg-white rounded-2xl max-w-4xl w-full shadow-2xl max-h-[90vh] overflow-y-auto my-4"
+        className="bg-white rounded-2xl max-w-4xl w-full shadow-2xl max-h-[90vh] overflow-y-auto my-4 animate-slide-down-fade"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header with Image and Title Overlay */}
