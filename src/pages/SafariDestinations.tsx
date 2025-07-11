@@ -10,6 +10,7 @@ import { MapPin } from "lucide-react";
 const SafariDestinations = () => {
   const [selectedSafari, setSelectedSafari] = useState<any>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [buttonPosition, setButtonPosition] = useState<{ x: number; y: number } | undefined>();
 
   const safaris = useMemo(() => [
     {
@@ -264,8 +265,12 @@ const SafariDestinations = () => {
     },
   ], []);
 
-  const handleLearnMore = (safari: any) => {
+  const handleLearnMore = (safari: any, event: React.MouseEvent) => {
     console.log('Learn More clicked for:', safari.name);
+    const rect = event.currentTarget.getBoundingClientRect();
+    const x = rect.left + rect.width / 2;
+    const y = rect.top + rect.height / 2;
+    setButtonPosition({ x, y });
     setSelectedSafari(safari);
     setIsModalOpen(true);
   };
@@ -336,7 +341,7 @@ const SafariDestinations = () => {
 
                   <div className="flex gap-3">
                     <button
-                      onClick={() => handleLearnMore(safari)}
+                      onClick={(e) => handleLearnMore(safari, e)}
                       className="safari-btn-secondary flex-1"
                     >
                       Learn More
@@ -360,6 +365,7 @@ const SafariDestinations = () => {
         <SafariModal
           isOpen={isModalOpen}
           onClose={closeModal}
+          buttonPosition={buttonPosition}
           safari={selectedSafari}
         />
       )}
