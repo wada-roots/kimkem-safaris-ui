@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
@@ -26,7 +27,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/660d9356-65c3-4d7a-92a7-ecc485dfb8a6.png" 
               alt="Kimken Safaris" 
-              className="h-16 w-auto"
+              className="h-12 sm:h-16 w-auto"
             />
           </Link>
 
@@ -63,8 +64,8 @@ const Header = () => {
             </div>
           </div>
 
-          {/* Book Now Button - Desktop */}
-          <Link to="/book" className="hidden lg:block safari-btn-primary text-sm xl:text-base px-4 xl:px-8 py-2 xl:py-3">
+          {/* Book Now Button - Desktop only */}
+          <Link to="/book" className="hidden xl:block safari-btn-primary text-sm xl:text-base px-4 xl:px-8 py-2 xl:py-3">
             Book Now
           </Link>
 

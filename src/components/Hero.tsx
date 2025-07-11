@@ -1,3 +1,4 @@
+
 import { ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -29,10 +30,10 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Floating Elements */}
-      <div className="absolute top-20 left-10 w-20 h-20 bg-safari-gold-400/20 rounded-full animate-bounce"></div>
-      <div className="absolute bottom-20 right-10 w-16 h-16 bg-white/10 rounded-full animate-pulse"></div>
-      <div className="absolute top-1/2 right-20 w-8 h-8 bg-safari-gold-400/30 rounded-full animate-ping"></div>
+      {/* Floating Elements - hidden on mobile */}
+      <div className="hidden md:block absolute top-20 left-10 w-20 h-20 bg-safari-gold-400/20 rounded-full animate-bounce"></div>
+      <div className="hidden md:block absolute bottom-20 right-10 w-16 h-16 bg-white/10 rounded-full animate-pulse"></div>
+      <div className="hidden md:block absolute top-1/2 right-20 w-8 h-8 bg-safari-gold-400/30 rounded-full animate-ping"></div>
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">

@@ -1,13 +1,11 @@
 
-import { useMemo } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import LazyImage from "@/components/LazyImage";
 import { Users, Fuel, Shield, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const Vehicles = () => {
-  const vehicles = useMemo(() => [
+const StaticVehicles = () => {
+  const vehicles = [
     {
       id: 1,
       name: "4X4 Toyota Land Cruiser",
@@ -31,7 +29,7 @@ const Vehicles = () => {
       id: 2,
       name: "Safari Minibuses",
       description: "Comfortable and spacious minibuses perfect for group safaris. Equipped with large windows and elevated seating for better wildlife viewing.",
-      image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/images/vehicles/minibus.jpeg",
       capacity: "10-14 Passengers",
       features: [
         "Large panoramic windows",
@@ -50,7 +48,7 @@ const Vehicles = () => {
       id: 3,
       name: "Open Roof Safari Van",
       description: "Experience the wild with an open roof safari van, offering 360-degree views and unobstructed photography opportunities.",
-      image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/images/vehicles/safari-van.jpeg",
       capacity: "8-10 Passengers",
       features: [
         "360-degree open roof viewing",
@@ -103,7 +101,7 @@ const Vehicles = () => {
       fuelType: "Diesel",
       transmission: "Manual",
     },
-  ], []);
+  ];
 
   return (
     <div className="min-h-screen">
@@ -133,7 +131,7 @@ const Vehicles = () => {
                 className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
               >
                 <div className="relative">
-                  <LazyImage
+                  <img
                     src={vehicle.image}
                     alt={vehicle.name}
                     className="w-full h-64 object-cover"
@@ -189,12 +187,15 @@ const Vehicles = () => {
                   </div>
 
                   <div className="flex gap-3">
-                    <button className="safari-btn-secondary flex-1">
+                    <Link
+                      to="/safaris"
+                      className="safari-btn-secondary flex-1 text-center"
+                    >
                       View Details
-                    </button>
+                    </Link>
                     <Link
                       to="/book"
-                      className="safari-btn-primary flex-1 text-center hidden md:block"
+                      className="safari-btn-primary flex-1 text-center"
                     >
                       Book This Vehicle
                     </Link>
@@ -211,4 +212,4 @@ const Vehicles = () => {
   );
 };
 
-export default Vehicles;
+export default StaticVehicles;

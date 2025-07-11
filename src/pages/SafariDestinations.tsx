@@ -1,15 +1,16 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SafariModal from "@/components/SafariModal";
-import { MapPin, Clock, Star, Camera } from "lucide-react";
+import LazyImage from "@/components/LazyImage";
+import { MapPin } from "lucide-react";
 
 const SafariDestinations = () => {
   const [selectedSafari, setSelectedSafari] = useState<any>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const safaris = [
+  const safaris = useMemo(() => [
     {
       id: 1,
       name: "Maasai Mara National Reserve",
@@ -17,7 +18,7 @@ const SafariDestinations = () => {
         "Witness the Great Migration and Africa's Big Five in Kenya's most famous reserve.",
       description:
         "Experience the pinnacle of African safari adventures in the world-renowned Maasai Mara. This iconic reserve offers unparalleled wildlife viewing opportunities, from the dramatic Great Migration to year-round Big Five encounters. The vast savannas stretch endlessly, dotted with acacia trees and teeming with life.",
-      image: "/images/destinations/maasai-mara.jpeg",
+      image: "https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       duration: "3-5 Days",
       price: "From $380/day",
       difficulty: "Easy to Moderate",
@@ -184,9 +185,9 @@ const SafariDestinations = () => {
       name: "Nairobi National Park",
       shortDesc: "Experience wildlife viewing just minutes from Kenya's capital city.",
       description: "Discover the unique Nairobi National Park, the only wildlife park in the world located within a capital city. This remarkable park offers incredible wildlife viewing opportunities against the backdrop of Nairobi's skyline. Home to lions, leopards, cheetahs, and over 400 bird species.",
-      image: "https://images.unsplash.com/photo-1605538883669-825200433431?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/images/destinations/nairobi.jpeg",
       duration: "Half Day - 2 Days",
-       mainprice: "From $180/day",
+      price: "From $180/day",
       difficulty: "Easy",
       bestTime: "Year-round",
       highlights: [
@@ -260,7 +261,7 @@ const SafariDestinations = () => {
         "Coastal accommodation and meals",
       ],
     },
-  ];
+  ], []);
 
   const handleLearnMore = (safari: any) => {
     setSelectedSafari(safari);
@@ -302,7 +303,7 @@ const SafariDestinations = () => {
                 className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
               >
                 <div className="relative">
-                  <img
+                  <LazyImage
                     src={safari.image}
                     alt={safari.name}
                     className="w-full h-64 object-cover"
@@ -339,7 +340,7 @@ const SafariDestinations = () => {
                     </button>
                     <Link
                       to={`/book?destination=${encodeURIComponent(safari.name)}`}
-                      className="safari-btn-primary flex-1 text-center"
+                      className="safari-btn-primary flex-1 text-center hidden md:block"
                     >
                       Book Now
                     </Link>
